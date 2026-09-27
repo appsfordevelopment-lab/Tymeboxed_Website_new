@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="images/B11-small.png" type="image/png">
+  <title>Get the app · Tyme Boxed</title>
+  <meta name="theme-color" content="#F4EFE6">
+  <meta name="robots" content="noindex">
+  <style>
+    :root {
+      --bg: #F4EFE6; --bg-card: #FBF8F2; --ink: #141414;
+      --ink-soft: #5C5752; --line: #E0D8C7; --accent: #D6532B; --accent-d: #B8431F;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg); color: var(--ink);
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      font-size: 17px; line-height: 1.55;
+      min-height: 100vh; display: grid; place-items: center; padding: 24px;
+    }
+    .card {
+      max-width: 420px; width: 100%;
+      background: var(--bg-card); border: 1px solid var(--line);
+      border-radius: 24px; padding: 40px 32px; text-align: center;
+    }
+    .card img.logo { height: 56px; margin-bottom: 20px; }
+    h1 { font-size: 24px; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 10px; }
+    p { color: var(--ink-soft); font-size: 15px; margin-bottom: 8px; }
+    .btn {
+      display: inline-flex; align-items: center; gap: 8px; justify-content: center;
+      background: var(--accent); color: #fff; text-decoration: none;
+      padding: 14px 26px; border-radius: 999px;
+      font-weight: 600; font-size: 15px; margin-top: 18px;
+    }
+    .btn:hover { background: var(--accent-d); }
+    .note {
+      margin-top: 18px; padding-top: 16px; border-top: 1px solid var(--line);
+      font-size: 13px; color: var(--ink-soft);
+    }
+    a.site { color: var(--accent-d); text-decoration: none; }
+    a.site:hover { text-decoration: underline; }
+    a:focus-visible { outline: 2px solid var(--accent-d); outline-offset: 3px; border-radius: 4px; }
+  </style>
+</head>
+
+<body>
+  <div class="card" id="card">
+    <img class="logo" src="images/B1-nav.png" alt="Tyme Boxed">
+    <div id="content">
+      <h1>Get the Tyme Boxed app</h1>
+      <p>Taking you to the store…</p>
+    </div>
+  </div>
+
+  <script>
+    const APP_STORE = "https://apps.apple.com/in/app/tyme-boxed/id6759287522";
+    const PLAY_STORE = "https://play.google.com/store/apps/details?id=dev.ambitionsoftware.tyme_boxed";
+    // TODO: replace with the real Mac App Store listing once it is live.
+    const MAC_STORE = "https://apps.apple.com/in/app/tyme-boxed/id0000000000";
+    const ua = navigator.userAgent || navigator.vendor || window.opera;
+    const content = document.getElementById("content");
+
+    // iPadOS 13+ reports itself as "Macintosh", so separate the two by touch support.
+    const isTouchMac = /Macintosh/.test(ua) && navigator.maxTouchPoints > 1;
+    const isIOS = (/iPad|iPhone|iPod/.test(ua) && !window.MSStream) || isTouchMac;
+    const isMac = /Macintosh|Mac OS X/.test(ua) && !isTouchMac;
+
+    const appStoreBtn = `<a class="btn" href="${APP_STORE}">Download on the App Store →</a>`;
+    const playStoreBtn = `<a class="btn" href="${PLAY_STORE}">Get it on Google Play →</a>`;
+    const macStoreBtn = `<a class="btn" href="${MAC_STORE}">Download on the Mac App Store →</a>`;
+
+    if (isIOS) {
+      window.location.replace(APP_STORE);
+    } else if (/android/i.test(ua)) {
+      window.location.replace(PLAY_STORE);
+    } else {
+      content.innerHTML = `
+        <h1>Get the Tyme Boxed app</h1>
+        <p>${isMac ? "Download for your Mac, or grab it on your phone:" : "Open this page on your phone, or download directly:"}</p>
+        ${isMac ? macStoreBtn + appStoreBtn + playStoreBtn : appStoreBtn + playStoreBtn + macStoreBtn}
+        <p class="note">One device. Every platform. iPhone, Android and Mac.</p>
+      `;
+    }
+  </script>
+
+  <script type="text/javascript">
+    (function (c, l, a, r, i, t, y) {
+      c[a] = c[a] || function () {
+        (c[a].q = c[a].q || []).push(arguments);
+      };
+      t = l.createElement(r);
+      t.async = 1;
+      t.src = "https://www.clarity.ms/tag/" + i;
+      y = l.getElementsByTagName(r)[0];
+      y.parentNode.insertBefore(t, y);
+    })(window, document, "clarity", "script", "w3uyp057u9");
+  </script>
+</body>
+</html>

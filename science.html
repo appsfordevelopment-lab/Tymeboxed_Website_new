@@ -1,0 +1,1138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '36986414434290717');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=36986414434290717&ev=PageView&noscript=1"
+/></noscript>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<link rel="icon" href="images/B11-small.png" type="image/png">
+<link rel="apple-touch-icon" href="images/B11-touch.png">
+<title>The Science · Tyme Boxed</title>
+<meta name="description" content="Why your phone wins, what it does to your brain, and how a six-second walk turns it around. The neuroscience behind Tyme Boxed.">
+<meta property="og:title" content="The Science · Tyme Boxed">
+<meta property="og:description" content="Why your phone wins, and how a six-second walk turns it around.">
+<meta property="og:image" content="https://tymeboxed.app/images/device-hero.jpg">
+<meta name="theme-color" content="#F4EFE6">
+<link rel="preconnect" href="https://www.clarity.ms">
+<script type="text/javascript">
+(function(c,l,a,r,i,t,y){
+  c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+  t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+  y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+})(window,document,"clarity","script","w3uyp057u9");
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="cart-fab.css">
+<style>
+  :root {
+    --bg:        #F4EFE6;
+    --bg-warm:   #EDE6D8;
+    --bg-card:   #FBF8F2;
+    --bg-deep:   #1A1A1A;
+    --ink:       #141414;
+    --ink-soft:  #5C5752;
+    --line:      #E0D8C7;
+    --accent:    #D6532B;
+    --accent-d:  #B8431F;
+    --green:     #2F6B3D;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html {
+    scroll-behavior: smooth; -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%; text-size-adjust: 100%;
+  }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    font-size: 17px; line-height: 1.55;
+    overflow-x: clip;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .btn, .menu-toggle, summary, a { touch-action: manipulation; }
+  html { overflow-x: clip; }
+  .serif { font-family: 'Instrument Serif', Georgia, serif; font-weight: 400; }
+  .container { max-width: 1200px; margin: 0 auto; padding: 0 28px; }
+  .narrow   { max-width: 760px;  margin: 0 auto; padding: 0 28px; }
+  a { color: inherit; text-decoration: none; }
+
+  /* ───── Nav ───── */
+  nav {
+    position: sticky; top: 0; z-index: 50;
+    background: rgba(244,239,230,0.85);
+    backdrop-filter: saturate(180%) blur(12px);
+    -webkit-backdrop-filter: saturate(180%) blur(12px);
+    border-bottom: 1px solid rgba(0,0,0,0.04);
+  }
+  .nav-inner {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    padding: 16px 28px; max-width: 1200px; margin: 0 auto;
+  }
+  .logo {
+    justify-self: start;
+    display: inline-flex;
+    align-items: center;
+    flex-shrink: 0;
+    line-height: 0;
+  }
+  .logo img {
+    height: 52px;
+    width: auto;
+    display: block;
+  }
+  .nav-links {
+    justify-self: center;
+    display: flex; gap: 40px; align-items: center;
+    font-size: 15px; color: var(--ink-soft); white-space: nowrap;
+  }
+  .nav-links a:hover { color: var(--ink); }
+  .nav-links a.active { color: var(--ink); font-weight: 500; }
+  .nav-actions {
+    justify-self: end;
+    display: flex; align-items: center; gap: 10px; flex-shrink: 0;
+  }
+  .btn {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: var(--ink); color: var(--bg);
+    padding: 12px 22px; border-radius: 999px;
+    font-weight: 500; font-size: 15px;
+    transition: transform .15s ease, background .15s ease;
+    border: 0; cursor: pointer;
+  }
+  .btn:hover { background: var(--accent); transform: translateY(-1px); }
+  .btn.lg { padding: 18px 32px; font-size: 17px; }
+  .btn.accent { background: var(--accent); }
+  .btn.accent:hover { background: var(--accent-d); }
+  .btn .arrow { transition: transform .15s ease; }
+  .btn:hover .arrow { transform: translateX(3px); }
+  .btn.share {
+    background: var(--accent);
+    color: var(--bg);
+    font-weight: 500;
+    border: 0; cursor: pointer; font-family: inherit;
+  }
+  .btn.share:hover {
+    background: var(--accent-d);
+    transform: translateY(-1px);
+  }
+  .btn.share svg { width: 16px; height: 16px; }
+
+  /* ───── HERO ───── */
+  .hero {
+    padding: 70px 0 50px;
+    text-align: center;
+  }
+  .meta-pill {
+    display: inline-flex; align-items: center; gap: 10px;
+    padding: 8px 16px;
+    background: var(--bg-warm); border: 1px solid var(--line);
+    border-radius: 999px; font-size: 13px; color: var(--ink-soft);
+    margin-bottom: 32px;
+  }
+  .meta-pill .clock {
+    width: 14px; height: 14px;
+  }
+  .meta-pill .sep { color: var(--line); }
+
+  h1.display {
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: clamp(48px, 6.8vw, 96px);
+    line-height: 0.95; letter-spacing: -0.04em;
+    max-width: 1000px; margin: 0 auto 28px;
+  }
+  h1.display .ital {
+    font-family: 'Instrument Serif', serif;
+    font-style: italic; font-weight: 400;
+    color: var(--accent);
+    letter-spacing: -0.02em;
+  }
+  .hero-sub {
+    font-size: 20px; color: var(--ink-soft);
+    max-width: 600px; margin: 0 auto;
+  }
+
+  /* ───── Page layout: sidebar + content ───── */
+  .page-wrap {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 60px;
+    max-width: 1200px; margin: 0 auto; padding: 0 28px;
+  }
+  .sidebar {
+    position: sticky; top: 100px;
+    align-self: start;
+    padding-top: 8px;
+  }
+  .sidebar-label {
+    font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase;
+    color: var(--ink-soft); font-weight: 600; margin-bottom: 20px;
+  }
+  .sidebar-list {
+    list-style: none; padding: 0; margin: 0;
+    border-left: 1px solid var(--line);
+  }
+  .sidebar-list a {
+    display: block;
+    padding: 14px 0 14px 20px;
+    margin-left: -1px;
+    font-size: 14px; color: var(--ink-soft);
+    border-left: 2px solid transparent;
+    transition: color .15s ease, border-color .15s ease;
+  }
+  .sidebar-list a:hover { color: var(--ink); }
+  .sidebar-list a.active {
+    color: var(--ink); border-left-color: var(--accent);
+    font-weight: 600;
+  }
+  .sidebar-list a span { display: block; font-size: 11px; color: var(--ink-soft); font-weight: 400; margin-top: 2px; }
+
+  /* Progress meter */
+  .progress-meter {
+    margin-top: 28px;
+    font-size: 12px; color: var(--ink-soft);
+  }
+  .progress-bar {
+    margin-top: 8px;
+    height: 4px; background: var(--line); border-radius: 2px;
+    overflow: hidden;
+  }
+  .progress-bar .fill {
+    height: 100%; background: var(--accent);
+    width: 0%;
+    transition: width .15s ease;
+  }
+
+  /* ───── Article ───── */
+  article { padding-top: 8px; padding-bottom: 80px; max-width: 760px; min-width: 0; }
+  .sidebar { min-width: 0; }
+  .chapter { padding-top: 80px; }
+  .chapter:first-of-type { padding-top: 0; }
+
+  .ch-eyebrow {
+    display: inline-flex; align-items: center; gap: 12px;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px; font-weight: 700; letter-spacing: 0.18em;
+    color: var(--accent-d); text-transform: uppercase;
+    margin-bottom: 18px;
+  }
+  .ch-eyebrow .num {
+    width: 24px; height: 24px; border-radius: 50%;
+    background: var(--accent); color: white;
+    display: inline-grid; place-items: center;
+    font-size: 11px; letter-spacing: 0;
+  }
+  h2.ch-title {
+    font-family: 'Inter', sans-serif; font-weight: 800;
+    font-size: clamp(36px, 4.6vw, 60px);
+    line-height: 1; letter-spacing: -0.03em;
+    margin-bottom: 24px;
+  }
+  h2.ch-title .ital {
+    font-family: 'Instrument Serif', serif;
+    font-style: italic; font-weight: 400;
+    color: var(--accent); letter-spacing: -0.02em;
+  }
+  .ch-hook {
+    font-size: 21px; line-height: 1.4;
+    color: var(--ink); margin-bottom: 36px;
+  }
+  .ch-hook strong { background: linear-gradient(180deg, transparent 60%, rgba(214,83,43,0.28) 60%); padding: 0 2px; }
+
+  article p { margin-bottom: 18px; color: var(--ink-soft); }
+  article p strong { color: var(--ink); }
+  article p.lead { color: var(--ink); font-size: 18px; }
+
+  /* "you" moment block */
+  .you-moment {
+    margin: 36px 0;
+    padding: 28px 32px;
+    background: var(--bg-card); border: 1px solid var(--line);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 16px 16px 0;
+  }
+  .you-moment .label {
+    font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--accent-d); font-weight: 700; margin-bottom: 10px;
+  }
+  .you-moment p {
+    font-family: 'Instrument Serif', serif;
+    font-size: 22px; line-height: 1.35; color: var(--ink);
+    margin: 0;
+  }
+
+  /* Big stat callout */
+  .stat-card {
+    margin: 40px 0;
+    padding: 36px;
+    background: var(--ink); color: var(--bg-card);
+    border-radius: 20px;
+    position: relative; overflow: hidden;
+  }
+  .stat-card::before {
+    content: ''; position: absolute; right: 0; top: 0;
+    width: 200px; height: 200px; border-radius: 50%;
+    background: var(--accent); opacity: 0.18; filter: blur(20px);
+    transform: translate(60px, -60px);
+    pointer-events: none;
+  }
+  .stat-card .num {
+    font-family: 'Inter', sans-serif; font-weight: 800;
+    font-size: clamp(54px, 6.5vw, 84px);
+    line-height: 0.95; letter-spacing: -0.04em;
+    position: relative; z-index: 2;
+  }
+  .stat-card .num .small {
+    font-family: 'Instrument Serif', serif; font-style: italic; font-weight: 400;
+    font-size: 0.5em; opacity: 0.7;
+  }
+  .stat-card .lbl {
+    margin-top: 14px; font-size: 16px; opacity: 0.85;
+    max-width: 480px; position: relative;
+  }
+  .stat-card .src {
+    margin-top: 18px; font-size: 12px; opacity: 0.5;
+    position: relative;
+  }
+  .stat-card.warm {
+    background: var(--accent); color: white;
+  }
+  .stat-card.warm::before {
+    background: white; opacity: 0.18;
+  }
+
+  /* Inline stat strip */
+  .stat-strip {
+    display: grid; grid-template-columns: 1fr 1fr 1fr;
+    gap: 0; margin: 36px 0;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    padding: 26px 0;
+  }
+  .stat-strip > div { text-align: center; padding: 0 18px; border-left: 1px solid var(--line); }
+  .stat-strip > div:first-child { border-left: 0; }
+  .stat-strip .n {
+    font-family: 'Instrument Serif', serif;
+    font-size: 42px; line-height: 1; color: var(--ink);
+  }
+  .stat-strip .n em { color: var(--accent); font-style: italic; }
+  .stat-strip .l {
+    margin-top: 8px; font-size: 13px; color: var(--ink-soft);
+  }
+
+  /* Mechanism cards */
+  .mechs {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 16px;
+    margin: 32px 0;
+  }
+  .mech {
+    background: var(--bg-card); border: 1px solid var(--line);
+    border-radius: 18px; padding: 26px;
+    transition: transform .25s ease;
+  }
+  .mech:hover { transform: translateY(-3px); }
+  .mech .ic {
+    width: 40px; height: 40px; border-radius: 11px;
+    background: var(--bg-warm); display: grid; place-items: center;
+    margin-bottom: 14px;
+  }
+  .mech h3 {
+    font-family: 'Inter', sans-serif; font-weight: 700;
+    font-size: 18px; letter-spacing: -0.01em; margin-bottom: 6px;
+  }
+  .mech p { color: var(--ink-soft); font-size: 14px; line-height: 1.5; margin: 0; }
+
+  /* Pull quote */
+  .pullquote {
+    margin: 50px 0;
+    padding: 0 0 0 20px;
+    border-left: 3px solid var(--accent);
+  }
+  .pullquote p {
+    font-family: 'Instrument Serif', serif;
+    font-size: clamp(28px, 3.4vw, 38px);
+    line-height: 1.15; letter-spacing: -0.015em;
+    color: var(--ink); margin: 0;
+  }
+  .pullquote p em { color: var(--accent); }
+  .pullquote .att {
+    margin-top: 14px; font-family: 'Inter', sans-serif;
+    font-size: 13px; color: var(--ink-soft); font-style: normal;
+    letter-spacing: 0.05em; text-transform: uppercase;
+  }
+
+  /* References / footnote micro-list */
+  .refs {
+    margin-top: 28px;
+    padding: 20px;
+    background: var(--bg-warm); border-radius: 14px;
+    font-size: 13px; color: var(--ink-soft);
+  }
+  .refs .lbl {
+    font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase;
+    color: var(--ink); font-weight: 700; margin-bottom: 10px;
+  }
+  .refs ul { list-style: none; padding: 0; }
+  .refs li { padding: 4px 0; line-height: 1.5; }
+
+  /* "Almost there" interstitial */
+  .breather {
+    margin: 60px auto;
+    text-align: center;
+    color: var(--ink-soft);
+  }
+  .breather .icon { font-size: 28px; opacity: 0.5; }
+  .breather p { margin-top: 8px; font-family: 'Instrument Serif', serif; font-size: 18px; font-style: italic; }
+
+  /* Solution chapter - slightly different bg */
+  .chapter.solution {
+    margin-top: 60px;
+    padding: 70px 36px;
+    background: var(--bg-warm);
+    border-radius: 24px;
+  }
+
+  /* Sources verified stamp */
+  .src-stamp {
+    margin-top: 24px;
+    display: inline-flex; align-items: center; gap: 10px;
+    padding: 10px 16px;
+    background: transparent; border: 1px dashed var(--line);
+    border-radius: 999px;
+    font-size: 12px; color: var(--ink-soft);
+    line-height: 1.4;
+  }
+  .src-stamp svg { color: var(--green); flex: none; }
+
+  /* The product call */
+  .product-cta {
+    margin: 50px 0 0;
+    padding: 40px;
+    background: var(--ink); color: var(--bg);
+    border-radius: 24px; text-align: center;
+    position: relative; overflow: hidden;
+  }
+  .product-cta::before {
+    content: ''; position: absolute; inset: 0;
+    background: radial-gradient(circle at 30% 30%, rgba(214,83,43,0.25), transparent 50%);
+  }
+  .product-cta h3 {
+    font-family: 'Inter', sans-serif; font-weight: 800;
+    font-size: clamp(28px, 3.4vw, 40px);
+    line-height: 1.05; letter-spacing: -0.025em;
+    margin-bottom: 12px; position: relative;
+  }
+  .product-cta h3 em {
+    font-family: 'Instrument Serif', serif; font-style: italic; font-weight: 400;
+    color: var(--accent);
+  }
+  .product-cta p { font-size: 15px; opacity: 0.85; margin-bottom: 24px; position: relative; color: rgba(255,255,255,0.85); }
+  .product-cta .btn { position: relative; }
+
+  /* ───── Footer (matches home) ───── */
+  footer { padding: 60px 0 40px; border-top: 1px solid var(--line); margin-top: 60px; background: var(--bg); }
+  .foot-grid {
+    display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr; gap: 32px;
+  }
+  .foot-grid h5 { font-size: 13px; text-transform: uppercase; letter-spacing: 0.12em; color: var(--ink-soft); margin-bottom: 16px; font-weight: 600; }
+  .foot-grid a { display: block; padding: 6px 0; font-size: 15px; color: var(--ink); }
+  .foot-grid a:hover { color: var(--accent); }
+  .foot-grid .logo { display: flex; }
+  .foot-bottom {
+    margin-top: 50px; padding-top: 24px; border-top: 1px solid var(--line);
+    display: flex; justify-content: space-between; align-items: center;
+    font-size: 13px; color: var(--ink-soft); flex-wrap: wrap; gap: 12px;
+  }
+  .store-badges { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 16px; }
+  .app-badge { display: inline-block; }
+  .app-badge img { width: 132px; height: 42px; display: block; }
+  .muted { color: var(--ink-soft); }
+
+  /* ───── Mobile ───── */
+  @media (max-width: 880px) {
+    body { font-size: 16px; }
+    .container, .narrow { padding: 0 20px; }
+
+    /* Nav - compact, smaller order button */
+    .nav-links { display: none; }
+    .nav-inner {
+      display: flex; justify-content: space-between;
+      padding: 12px 18px;
+    }
+    .logo img { height: 40px; }
+    .btn { padding: 12px 18px; font-size: 13px; }
+
+    /* Hero - tighter spacing, smaller meta pill */
+    .hero { padding: 32px 0 28px; }
+    .meta-pill {
+      font-size: 11px; padding: 6px 12px; gap: 6px;
+      white-space: nowrap;
+      max-width: 100%;
+      overflow: hidden;
+    }
+    .meta-pill .clock { width: 12px; height: 12px; }
+    h1.display { margin-bottom: 22px; }
+    .hero-sub { font-size: 17px; padding: 0 4px; }
+
+    /* Page wrap stacks */
+    .page-wrap {
+      grid-template-columns: 1fr; gap: 0;
+      padding: 0 20px;
+    }
+
+    /* Sidebar → vertical stack of full-width chips with subtitles */
+    .sidebar {
+      position: static;
+      margin-bottom: 28px;
+      padding: 16px;
+      background: var(--bg-warm);
+      border-radius: 16px;
+    }
+    .sidebar-label {
+      margin-bottom: 12px; font-size: 11px;
+    }
+    .sidebar-list {
+      display: flex; flex-direction: column;
+      gap: 8px;
+      border-left: 0;
+      margin: 0; padding: 0;
+    }
+    .sidebar-list a {
+      display: flex; flex-direction: column; justify-content: center;
+      padding: 12px 16px; border-left: 0;
+      background: var(--bg-card); border: 1px solid var(--line);
+      border-radius: 14px;
+      font-size: 14px; font-weight: 600;
+      color: var(--ink);
+      min-height: 44px;
+      transition: background .15s ease, border-color .15s ease, color .15s ease;
+    }
+    .sidebar-list a span {
+      display: block;
+      font-size: 11.5px;
+      font-weight: 400;
+      color: var(--ink-soft);
+      margin-top: 2px;
+      letter-spacing: 0;
+    }
+    .sidebar-list a.active {
+      background: var(--ink); color: var(--bg-card); border-color: var(--ink);
+    }
+    .sidebar-list a.active span {
+      color: var(--bg-card); opacity: 0.65;
+    }
+    .progress-meter { display: none; }
+
+    /* Article */
+    article { padding-bottom: 60px; }
+    .chapter { padding-top: 56px; }
+    .ch-eyebrow { font-size: 11px; gap: 10px; margin-bottom: 14px; }
+    .ch-eyebrow .num { width: 22px; height: 22px; font-size: 11px; }
+    h2.ch-title { margin-bottom: 20px; }
+    .ch-hook { font-size: 18px; line-height: 1.42; margin-bottom: 28px; }
+    article p { margin-bottom: 16px; }
+    article p.lead { font-size: 17px; }
+
+    /* You-moment */
+    .you-moment {
+      margin: 28px 0;
+      padding: 20px 22px;
+      border-radius: 0 14px 14px 0;
+    }
+    .you-moment .label { font-size: 11px; margin-bottom: 8px; }
+    .you-moment p { font-size: 19px; }
+
+    /* Stat card */
+    .stat-card { padding: 26px; margin: 32px 0; border-radius: 18px; }
+    .stat-card .num { font-size: 48px; }
+    .stat-card .lbl { font-size: 15px; margin-top: 12px; }
+    .stat-card .src { font-size: 11px; margin-top: 14px; }
+
+    /* Stat strip - single column, bigger labels */
+    .stat-strip {
+      grid-template-columns: 1fr;
+      padding: 18px 0; margin: 28px 0;
+    }
+    .stat-strip > div {
+      border-left: 0; border-top: 1px solid var(--line);
+      padding: 22px 8px;
+    }
+    .stat-strip > div:first-child { border-top: 0; padding-top: 6px; }
+    .stat-strip > div:last-child { padding-bottom: 6px; }
+    .stat-strip .n { font-size: 38px; }
+    .stat-strip .l { font-size: 14px; margin-top: 10px; line-height: 1.5; }
+
+    /* Mech cards */
+    .mechs { grid-template-columns: 1fr; gap: 14px; margin: 28px 0; }
+    .mech { padding: 22px; border-radius: 16px; }
+    .mech .ic { width: 36px; height: 36px; border-radius: 10px; margin-bottom: 12px; }
+    .mech h3 { font-size: 17px; margin-bottom: 6px; }
+    .mech p { font-size: 14px; line-height: 1.5; }
+
+    /* Pull quote */
+    .pullquote { margin: 40px 0; padding-left: 16px; border-left-width: 3px; }
+    .pullquote p { font-size: 26px; line-height: 1.2; }
+    .pullquote .att { font-size: 11px; margin-top: 12px; letter-spacing: 0.06em; }
+
+    /* Refs */
+    .refs { padding: 18px; border-radius: 12px; font-size: 12.5px; margin-top: 24px; }
+    .refs .lbl { font-size: 11px; margin-bottom: 8px; }
+    .refs li { padding: 5px 0; line-height: 1.45; }
+
+    /* Breather */
+    .breather { margin: 44px auto; }
+    .breather .icon { font-size: 24px; }
+    .breather p { font-size: 16px; }
+
+    /* Solution chapter */
+    .chapter.solution {
+      padding: 44px 22px;
+      margin-top: 44px;
+      border-radius: 20px;
+    }
+
+    /* Sources verified stamp */
+    .src-stamp {
+      margin-top: 20px;
+      padding: 10px 14px;
+      font-size: 11.5px;
+      line-height: 1.5;
+      align-items: flex-start;
+    }
+    .src-stamp svg { margin-top: 2px; }
+
+    /* Product CTA */
+    .product-cta {
+      padding: 32px 22px;
+      margin: 36px 0 0;
+      border-radius: 20px;
+    }
+    .product-cta h3 { font-size: 26px; line-height: 1.1; margin-bottom: 10px; }
+    .product-cta p { font-size: 14px; margin-bottom: 22px; }
+    .product-cta .btn.lg { padding: 14px 22px; font-size: 14px; }
+
+    /* Footer */
+    .foot-grid { grid-template-columns: 1fr 1fr; gap: 28px; }
+    .foot-grid h5 { font-size: 11px; margin-bottom: 12px; }
+    .foot-grid a { padding: 5px 0; font-size: 14px; }
+    footer { padding: 50px 0 32px; }
+    .foot-bottom { font-size: 12px; padding-top: 20px; margin-top: 36px; }
+  }
+
+  /* Extra-small (≤ 380px) - iPhone SE etc. */
+  @media (max-width: 380px) {
+    .container, .narrow, .page-wrap { padding: 0 16px; }
+    .nav-inner { padding: 11px 16px; }
+    .logo img { height: 40px; }
+    .btn { padding: 12px 16px; font-size: 12.5px; }
+    .meta-pill { font-size: 11px; padding: 5px 10px; }
+    .meta-pill .sep { display: none; }
+    .meta-pill .skim-tag { display: none; }
+    h1.display { font-size: 44px; line-height: 0.95; letter-spacing: -0.035em; }
+    .hero-sub { font-size: 16px; }
+    .ch-hook { font-size: 17px; }
+    .stat-card .num { font-size: 42px; }
+    .stat-strip .n { font-size: 34px; }
+    .pullquote p { font-size: 23px; }
+    .product-cta h3 { font-size: 23px; }
+    .foot-grid { grid-template-columns: 1fr; gap: 26px; }
+  }
+
+  /* ───── Mobile Menu ───── */
+  @media (min-width: 881px) {
+    .menu-toggle { display: none; }
+  }
+  @media (max-width: 880px) {
+    .menu-toggle { display: flex; }
+  }
+  .menu-toggle {
+    background: none; border: none; cursor: pointer;
+    width: 40px; height: 40px;
+    flex-direction: column; justify-content: center; align-items: center; gap: 5px;
+    padding: 8px; flex-shrink: 0;
+  }
+  .menu-toggle span {
+    display: block; width: 20px; height: 2px;
+    background: var(--ink); border-radius: 2px;
+  }
+  .mobile-menu-backdrop {
+    position: fixed; inset: 0; background: rgba(0,0,0,0.3);
+    z-index: 99; opacity: 0; pointer-events: none;
+    transition: opacity .35s ease;
+  }
+  .mobile-menu-backdrop.open { opacity: 1; pointer-events: auto; }
+  .mobile-menu {
+    position: fixed; top: 0; right: 0; bottom: 0;
+    width: min(320px, 82vw);
+    background: var(--bg); z-index: 100;
+    transform: translateX(100%);
+    transition: transform .35s cubic-bezier(.4,0,.2,1);
+    display: flex; flex-direction: column;
+    box-shadow: -10px 0 40px rgba(0,0,0,0.08);
+  }
+  .mobile-menu.open { transform: translateX(0); }
+  .mobile-menu-header {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 16px 22px; border-bottom: 1px solid var(--line);
+  }
+  .menu-close {
+    background: none; border: none; cursor: pointer;
+    font-size: 28px; color: var(--ink); width: 40px; height: 40px;
+    display: grid; place-items: center;
+  }
+  .mobile-menu-links {
+    padding: 32px 22px; display: flex; flex-direction: column; gap: 4px; flex: 1;
+  }
+  .mobile-menu-links a {
+    font-size: 18px; font-weight: 500; padding: 14px 0;
+    color: var(--ink); border-bottom: 1px solid var(--line);
+    transition: color .15s;
+  }
+  .mobile-menu-links a:last-child { border-bottom: none; }
+  .mobile-menu-links a:hover { color: var(--accent); }
+  .reveal { opacity: 0; transform: translateY(20px); transition: opacity .7s ease, transform .7s ease; }
+  .reveal.in { opacity: 1; transform: none; }
+
+  /* ───── Accessibility ───── */
+  a:focus-visible, button:focus-visible, summary:focus-visible {
+    outline: 2px solid var(--accent-d); outline-offset: 3px; border-radius: 4px;
+  }
+  .btn:focus-visible { outline-offset: 4px; border-radius: 999px; }
+  .btn:active { transform: scale(0.97); }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+    .reveal { opacity: 1; transform: none; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="logo"><img src="images/B1-nav.png" alt="Tyme Boxed" /></a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="science.html" class="active">The Science</a>
+      <a href="quiz.html">Is Tyme Boxed for me?</a>
+    </div>
+    <div class="nav-actions">
+      <a href="preorder.html" class="btn share">Order now <span class="arrow">→</span></a>
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<div class="mobile-menu-backdrop" id="menuBackdrop"></div>
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-menu-header">
+    <a href="index.html" class="logo"><img src="images/B1-nav.png" alt="Tyme Boxed" /></a>
+    <button class="menu-close" aria-label="Close menu">×</button>
+  </div>
+  <div class="mobile-menu-links">
+    <a href="index.html">Home</a>
+    <a href="science.html">The Science</a>
+    <a href="quiz.html">Is Tyme Boxed for me?</a>
+    <a href="preorder.html">Order now</a>
+    <a href="support.html">Help center</a>
+  </div>
+</div>
+
+<!-- ───── HERO ───── -->
+<header class="hero">
+  <div class="container">
+    <div class="meta-pill">
+      <svg class="clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+      <span>The Science</span>
+      <span class="sep">·</span>
+      <span>~5 min read</span>
+      <span class="sep skim-sep">·</span>
+      <span class="skim-tag">skim-friendly</span>
+    </div>
+    <h1 class="display">
+      Your attention<br>isn't <span class="ital">free.</span>
+    </h1>
+    <p class="hero-sub">
+      Why your phone keeps winning. What it does to your brain. And how a 6-second walk turns it around.
+    </p>
+  </div>
+</header>
+
+<div class="page-wrap">
+
+  <!-- ───── SIDEBAR ───── -->
+  <aside class="sidebar">
+    <div class="sidebar-label">In this read</div>
+    <ul class="sidebar-list">
+      <li><a href="#trap" data-target="trap" class="active">01 · The Trap<span>Why you keep losing.</span></a></li>
+      <li><a href="#damage" data-target="damage">02 · The Damage<span>Your brain on scroll.</span></a></li>
+      <li><a href="#way-out" data-target="way-out">03 · The Way Out<span>The 6-second fix.</span></a></li>
+    </ul>
+    <div class="progress-meter">
+      <span id="progressLbl">0%</span> through
+      <div class="progress-bar"><div class="fill" id="progressFill"></div></div>
+    </div>
+  </aside>
+
+  <!-- ───── ARTICLE ───── -->
+  <article>
+
+    <!-- ─── CHAPTER 1 ─── -->
+    <section class="chapter" id="trap">
+      <div class="ch-eyebrow"><span class="num">1</span> The Trap</div>
+      <h2 class="ch-title">You're not weak.<br>You're <span class="ital">outnumbered.</span></h2>
+
+      <p class="ch-hook">
+        The most valuable thing you own isn't money. It's attention. Companies <strong>buy and sell</strong> yours every day. Their whole business depends on keeping you scrolling.
+      </p>
+
+      <div class="stat-card reveal">
+        <div class="num">$400<span class="small"> to $500</span></div>
+        <div class="lbl">What Meta and Google alone earn from each North-American user, every year. Add TikTok, Snap, and X and the total climbs higher.</div>
+        <div class="src">Meta Platforms Annual Report (2023); Alphabet Form 10-K (2023). ARPU, North America.</div>
+      </div>
+
+      <p>You're not the customer. You pay nothing. That means you're not buying a service. <strong>You are the inventory.</strong> Every minute you scroll is revenue. Every minute you don't is revenue lost.</p>
+
+      <div class="you-moment">
+        <div class="label">If you've ever wondered…</div>
+        <p>"Why can I read a hard book for an hour, but lose 90 minutes to Instagram and not remember a single thing I saw?"</p>
+      </div>
+
+      <p class="lead">Here's the machinery that was built, quite deliberately, against you.</p>
+
+      <div class="mechs">
+        <div class="mech reveal">
+          <div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 2v6m0 8v6M2 12h6m8 0h6"/><circle cx="12" cy="12" r="3" fill="currentColor"/></svg></div>
+          <h3>The Variable Reward</h3>
+          <p>Same trick a slot machine uses. Sometimes brilliant, sometimes nothing. Your brain cannot voluntarily stop pulling a lever that occasionally pays out.</p>
+        </div>
+        <div class="mech reveal">
+          <div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M13 2L5 14h6l-1 8 8-12h-6l1-8z"/></svg></div>
+          <h3>The Dopamine Anticipation Hook</h3>
+          <p>Dopamine isn't released when you <em>get</em> the reward. It surges in the <em>anticipation</em> of it. Every refresh, every loading screen. Your brain floods before it knows what's coming.</p>
+        </div>
+        <div class="mech reveal">
+          <div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+          <h3>The Social Validation Circuit</h3>
+          <p>fMRI confirms it: a "like" hits the same neural pathways as approval from your closest people. This isn't a metaphor. It is identical brain activation.</p>
+        </div>
+        <div class="mech reveal">
+          <div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M5 8c4 6 10 6 14 0M5 14c4 6 10 6 14 0"/></svg></div>
+          <h3>Infinite Scroll. No Stop Sign.</h3>
+          <p>Every book ends. Every film ends. Every conversation ends. Feeds were designed to remove the natural "you're done" signal. Engineers took it out on purpose.</p>
+        </div>
+      </div>
+
+      <div class="pullquote reveal">
+        <p>We've built a world our brains were never designed to navigate. <em>And then we blame ourselves</em> for struggling.</p>
+        <div class="att">Tristan Harris, Center for Humane Technology</div>
+      </div>
+
+      <div class="refs">
+        <div class="lbl">Sources</div>
+        <ul>
+          <li>Meta Platforms Inc., <em>Annual Report</em> (2023). North-America ARPU.</li>
+          <li>Alphabet Inc., <em>Form 10-K</em> (2023). Google services revenue by geography.</li>
+          <li>Eyal, N. (2014). <em>Hooked: How to Build Habit-Forming Products</em>.</li>
+          <li>Alter, A. (2017). <em>Irresistible: The Rise of Addictive Technology</em>.</li>
+          <li>Harris, T., Center for Humane Technology talks &amp; testimony.</li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="breather">
+      <div class="icon">☕</div>
+      <p>One chapter down. Two to go.</p>
+    </div>
+
+    <!-- ─── CHAPTER 2 ─── -->
+    <section class="chapter" id="damage">
+      <div class="ch-eyebrow"><span class="num">2</span> The Damage</div>
+      <h2 class="ch-title">Your brain is <span class="ital">rewiring</span> itself. Quietly.</h2>
+
+      <p class="ch-hook">
+        This isn't just lost time. Heavy phone use <strong>physically changes</strong> your brain. Science is only starting to measure how much.
+      </p>
+
+      <div class="stat-strip reveal">
+        <div>
+          <div class="n">2.5<em>m</em> → 47<em>s</em></div>
+          <div class="l">Average sustained focus on a single screen task. 2004 vs today. <em>(Gloria Mark, UC Irvine)</em></div>
+        </div>
+        <div>
+          <div class="n">~26<em>%</em></div>
+          <div class="l">Working-memory capacity lost when your phone is just <em>visible</em>. Strongest among heavy users. <em>(Ward et al., 2017)</em></div>
+        </div>
+        <div>
+          <div class="n">55<em>%</em></div>
+          <div class="l">Drop in melatonin from evening light-emitting device use vs print reading. <em>(Chang et al., Harvard, 2015)</em></div>
+        </div>
+      </div>
+
+      <div class="mechs">
+        <div class="mech reveal">
+          <div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M9 4a4 4 0 0 0-4 4v3a3 3 0 0 0 0 6 4 4 0 0 0 8 0V8a4 4 0 0 0-4-4zM15 4a4 4 0 0 1 4 4v3a3 3 0 0 1 0 6 4 4 0 0 1-8 0"/></svg></div>
+          <h3>Attention Residue</h3>
+          <p>Every time you flip back from a feed, your prefrontal cortex doesn't fully return for a while. Sophie Leroy named this <em>attention residue</em>: the cognitive cost lingers long after the tab is closed.</p>
+        </div>
+        <div class="mech reveal">
+          <div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
+          <h3>Shrinking Focus</h3>
+          <p>Gloria Mark's research tracked workers for two decades. Average uninterrupted focus on a single screen task fell from <strong>2.5 minutes (2004) to 47 seconds (today).</strong> Deep focus doesn't just become hard. It becomes unfamiliar.</p>
+        </div>
+        <div class="mech reveal">
+          <div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M20 14A8 8 0 1 1 10 4a6 6 0 0 0 10 10z"/></svg></div>
+          <h3>Sleep Architecture Damage</h3>
+          <p>A Harvard study (Chang et al.) found that reading on a light-emitting device before bed suppressed melatonin by <strong>~55%</strong> compared to print, and delayed REM sleep by 90 minutes. Blue-light filters don't fully fix it.</p>
+        </div>
+        <div class="mech reveal">
+          <div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 9v4M12 17h.01"/><circle cx="12" cy="12" r="9"/></svg></div>
+          <h3>The Mere-Presence Effect</h3>
+          <p>Ward et al. (2017) found that a phone on the desk cuts working memory by up to <strong>26%</strong>. Face down. Silent. Off. The effect was largest for heavy users.</p>
+        </div>
+      </div>
+
+      <div class="you-moment">
+        <div class="label">It's not the time. It's the residue.</div>
+        <p>Conversations you were physically present for, but mentally absent from. Work that takes three hours because you were interrupted every 47 seconds. A book on page 12 for six months.</p>
+      </div>
+
+      <p>The compounding effect is what's actually alarming. Each day of overconsumption makes the next day harder. Neural pathways literally <strong>strengthen</strong> in the direction of distraction. The longer you wait, the deeper the groove.</p>
+
+      <div class="pullquote reveal">
+        <p>It's not that you lack discipline. <em>It's that you're fighting a battle</em> your prefrontal cortex was never equipped to win.</p>
+      </div>
+
+      <div class="refs">
+        <div class="lbl">Sources</div>
+        <ul>
+          <li>Mark, G. (2023). <em>Attention Span</em>: average focus on a screen task fell from 2.5 minutes (2004) to 47 seconds (today).</li>
+          <li>Ward, A.F., Duke, K., Gneezy, A., Bos, M.W. (2017). <em>Brain Drain: The Mere Presence of One's Own Smartphone Reduces Available Cognitive Capacity</em>. Journal of the Association for Consumer Research, 2(2).</li>
+          <li>Chang, A.M., Aeschbach, D., Duffy, J.F., Czeisler, C.A. (2015). <em>Evening use of light-emitting eReaders negatively affects sleep, circadian timing, and next-morning alertness</em>. PNAS, 112(4).</li>
+          <li>Leroy, S. (2009). <em>Why is it so hard to do my work? The challenge of attention residue when switching between work tasks</em>. Organizational Behavior and Human Decision Processes, 109(2).</li>
+          <li>Newport, C. (2019). <em>Digital Minimalism</em>.</li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="breather">
+      <div class="icon">→</div>
+      <p>Almost there. The good part is next.</p>
+    </div>
+
+    <!-- ─── CHAPTER 3 ─── -->
+    <section class="chapter solution" id="way-out">
+      <div class="ch-eyebrow"><span class="num">3</span> The Way Out</div>
+      <h2 class="ch-title">Not another app.<br>A <span class="ital">six-second walk.</span></h2>
+
+      <p class="ch-hook">
+        Tyme Boxed doesn't ask you to be stronger. It changes your environment so that strength <strong>barely needs to be involved.</strong>
+      </p>
+
+      <div class="stat-card warm reveal">
+        <div class="num">~6 <span class="small">seconds</span></div>
+        <div class="lbl">How long it takes to walk to the device. Impulses crest and fade within seconds once a delay appears. Not minutes. The walk is enough.</div>
+        <div class="src">Walk time: typical home layouts. On impulse decay: Hofmann et al. (2012), experience-sampling study of everyday temptations.</div>
+      </div>
+
+      <p>By placing a physical barrier between you and your distracting apps, Tyme Boxed creates the one thing no software ever could: a real, <strong>unavoidable moment of friction.</strong></p>
+
+      <p class="lead">Here's why that friction is the whole answer, according to 30 years of behavioural science:</p>
+
+      <div class="mechs">
+        <div class="mech reveal">
+          <div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 12l5 5 13-13"/></svg></div>
+          <h3>Implementation Intentions</h3>
+          <p>People with "if-then" plans that include a <strong>physical component</strong> are 2 to 3× more likely to follow through than people relying on willpower. Tyme Boxed is that physical component.<br><em>Gollwitzer (1999)</em></p>
+        </div>
+        <div class="mech reveal">
+          <div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 4l16 16M20 4L4 20"/></svg></div>
+          <h3>Physical Friction as Cognitive Reset</h3>
+          <p>A real step between impulse and action breaks the autopilot loop. Even a delay of seconds lets the thinking brain catch up.<br><em>Thaler &amp; Sunstein (2008); Hofmann et al. (2012)</em></p>
+        </div>
+        <div class="mech reveal">
+          <div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M21 3v18H3"/><path d="M21 8H8v13"/></svg></div>
+          <h3>Choice Architecture</h3>
+          <p>Your environment shapes your behaviour more than your character does. Tyme Boxed makes <strong>focused the default</strong>. Distraction becomes the effortful choice.<br><em>Kahneman (2011)</em></p>
+        </div>
+        <div class="mech reveal">
+          <div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 12a9 9 0 1 0 9-9"/><path d="M12 7v5l3 3"/></svg></div>
+          <h3>Habit Loop Interruption</h3>
+          <p>Habits run as cue → routine → reward, with no thought in between. A physical step breaks the loop before the reward fires. Over time, the pathway weakens.<br><em>Duhigg (2012)</em></p>
+        </div>
+      </div>
+
+      <div class="pullquote reveal">
+        <p>The most powerful productivity tool isn't faster software. <em>It's slower access to distraction.</em></p>
+      </div>
+
+      <p>Tyme Boxed asks nothing of you in the moment. No willpower. No motivation. No self-control. It changes your environment and lets your brain do the rest.</p>
+
+      <p class="lead">You know what you'd do with an extra two hours a day. So stop waiting for willpower. <strong>Change the environment instead.</strong></p>
+
+      <div class="refs">
+        <div class="lbl">Sources</div>
+        <ul>
+          <li>Gollwitzer, P.M. (1999). Implementation intentions. <em>American Psychologist</em>, 54(7), 493-503.</li>
+          <li>Thaler, R. &amp; Sunstein, C. (2008). <em>Nudge: Improving Decisions About Health, Wealth, and Happiness.</em></li>
+          <li>Kahneman, D. (2011). <em>Thinking, Fast and Slow.</em></li>
+          <li>Duhigg, C. (2012). <em>The Power of Habit.</em></li>
+          <li>Hofmann, W., Baumeister, R.F., Förster, G., Vohs, K.D. (2012). <em>Everyday temptations: An experience sampling study of desire, conflict, and self-control</em>. Journal of Personality and Social Psychology, 102(6).</li>
+        </ul>
+      </div>
+
+      <div class="src-stamp">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+        <span>Every research figure on this page is linked to its primary source. Last verified May 2026 against the original studies and reports.</span>
+      </div>
+
+      <div class="product-cta">
+        <h3>Stop reading. <em>Start walking.</em></h3>
+        <p>The first walk to the device is the only hard one.</p>
+        <a href="preorder.html" class="btn lg accent">Get Tyme Boxed <span class="arrow">→</span></a>
+      </div>
+    </section>
+  </article>
+</div>
+
+<!-- ───── FOOTER ───── -->
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <div class="logo"><img src="images/B1-nav.png" alt="Tyme Boxed" /></div>
+        <p class="muted" style="margin-top: 14px; font-size: 14px; max-width: 280px;">A small device for a quieter mind.</p>
+        <div class="store-badges">
+          <a class="app-badge" href="https://apps.apple.com/in/app/tyme-boxed/id6759287522">
+            <img src="images/app.png" alt="Download on the App Store" loading="lazy" decoding="async">
+          </a>
+          <a class="app-badge" href="https://play.google.com/store/apps/details?id=dev.ambitionsoftware.tyme_boxed">
+            <img src="images/google-play.png" alt="Get it on Google Play" loading="lazy" decoding="async">
+          </a>
+          <a class="app-badge" href="https://apps.apple.com/in/app/tyme-boxed/id0000000000">
+            <img src="images/mac-app-store.svg" alt="Download on the Mac App Store" loading="lazy" decoding="async">
+          </a>
+        </div>
+      </div>
+      <div>
+        <h5>Product</h5>
+        <a href="index.html">Home</a>
+        <a href="science.html">The Science</a>
+        <a href="quiz.html">Is Tyme Boxed for me?</a>
+        <a href="preorder.html">Order</a>
+      </div>
+      <div>
+        <h5>Support</h5>
+        <a href="support.html">Help center</a>
+      </div>
+      <div>
+        <h5>Legal</h5>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+      </div>
+      <div>
+        <h5>Follow</h5>
+        <a href="https://www.linkedin.com/company/tyme-boxed/">LinkedIn</a>
+        <a href="https://www.instagram.com/tyme_boxed">Instagram</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Tyme Boxed. All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+
+<button type="button" class="cart-fab" id="cart-fab" aria-label="Open cart">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+    <path d="M6 6h15l-1.5 9h-12z"/>
+    <path d="M6 6L5 3H2"/>
+    <circle cx="9" cy="20" r="1"/>
+    <circle cx="18" cy="20" r="1"/>
+  </svg>
+  <span class="cart-fab-count" id="cart-fab-count">1</span>
+</button>
+
+<script src="cart.js"></script>
+
+
+<script>
+  // Reveal on scroll
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // Sticky sidebar active state + progress meter
+  const chapters = ['trap', 'damage', 'way-out'];
+  const links = document.querySelectorAll('.sidebar-list a');
+  const fill = document.getElementById('progressFill');
+  const lbl = document.getElementById('progressLbl');
+
+  function update() {
+    // Progress through article
+    const article = document.querySelector('article');
+    if (article) {
+      const aRect = article.getBoundingClientRect();
+      const winH = window.innerHeight;
+      const total = aRect.height - winH;
+      const passed = Math.max(0, -aRect.top);
+      const pct = Math.min(100, Math.max(0, (passed / total) * 100));
+      if (fill) fill.style.width = pct.toFixed(0) + '%';
+      if (lbl) lbl.textContent = pct.toFixed(0) + '%';
+    }
+    // Active chapter
+    let active = chapters[0];
+    chapters.forEach(id => {
+      const el = document.getElementById(id);
+      if (el && el.getBoundingClientRect().top < 200) active = id;
+    });
+    links.forEach(a => {
+      if (a.dataset.target === active) a.classList.add('active');
+      else a.classList.remove('active');
+    });
+  }
+  window.addEventListener('scroll', update, { passive: true });
+  window.addEventListener('resize', update);
+  update();
+
+  // Mobile menu
+  (function(){
+    const toggle = document.querySelector('.menu-toggle');
+    const menu = document.getElementById('mobileMenu');
+    const backdrop = document.getElementById('menuBackdrop');
+    const close = document.querySelector('.menu-close');
+    function open() { menu.classList.add('open'); backdrop.classList.add('open'); document.body.style.overflow = 'hidden'; toggle.setAttribute('aria-expanded', 'true'); }
+    function shut() { menu.classList.remove('open'); backdrop.classList.remove('open'); document.body.style.overflow = ''; toggle.setAttribute('aria-expanded', 'false'); }
+    toggle.addEventListener('click', open);
+    close.addEventListener('click', shut);
+    backdrop.addEventListener('click', shut);
+    menu.querySelectorAll('a').forEach(a => a.addEventListener('click', shut));
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') shut(); });
+  })();
+</script>
+</body>
+</html>

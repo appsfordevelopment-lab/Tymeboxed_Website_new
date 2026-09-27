@@ -1,0 +1,1395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+!function(f,b,e,v,n,t,s)to amz
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '36986414434290717');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=36986414434290717&ev=PageView&noscript=1"
+/></noscript>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<link rel="icon" href="images/B11-small.png" type="image/png">
+<link rel="apple-touch-icon" href="images/B11-touch.png">
+<title>Is Tyme Boxed for you? · 5 questions, 90 seconds.</title>
+<meta name="theme-color" content="#F4EFE6">
+<meta name="description" content="A quick honest read on whether the device will actually help you. Five questions, no email required.">
+<meta property="og:title" content="Is Tyme Boxed for you?">
+<meta property="og:description" content="5 questions. 90 seconds. Honest answer at the end.">
+<meta property="og:image" content="https://tymeboxed.app/images/device-hero.jpg">
+<link rel="preconnect" href="https://www.clarity.ms">
+<script type="text/javascript">
+(function(c,l,a,r,i,t,y){
+  c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+  t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+  y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+})(window,document,"clarity","script","w3uyp057u9");
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="cart-fab.css">
+<style>
+  :root {
+    --bg:        #F4EFE6;
+    --bg-warm:   #EDE6D8;
+    --bg-card:   #FBF8F2;
+    --bg-deep:   #1A1A1A;
+    --ink:       #141414;
+    --ink-soft:  #5C5752;
+    --line:      #E0D8C7;
+    --accent:    #D6532B;
+    --accent-d:  #B8431F;
+    --accent-soft: rgba(214,83,43,0.08);
+    --green:     #2F6B3D;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html {
+    scroll-behavior: smooth; -webkit-font-smoothing: antialiased; overflow-x: clip;
+    -webkit-text-size-adjust: 100%; text-size-adjust: 100%;
+  }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    font-size: 17px; line-height: 1.55;
+    overflow-x: clip;
+    min-height: 100vh;
+    display: flex; flex-direction: column;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .btn, .ghost-btn, .opt, .menu-toggle, summary, a { touch-action: manipulation; }
+  .serif { font-family: 'Instrument Serif', Georgia, serif; font-weight: 400; }
+  .container { max-width: 1200px; margin: 0 auto; padding: 0 28px; }
+  .narrow { max-width: 720px; margin: 0 auto; padding: 0 28px; }
+  a { color: inherit; text-decoration: none; }
+
+  /* ───── Nav ───── */
+  nav {
+    position: sticky; top: 0; z-index: 50;
+    background: rgba(244,239,230,0.85);
+    backdrop-filter: saturate(180%) blur(12px);
+    -webkit-backdrop-filter: saturate(180%) blur(12px);
+    border-bottom: 1px solid rgba(0,0,0,0.04);
+  }
+  .nav-inner {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    padding: 16px 28px; max-width: 1200px; margin: 0 auto;
+  }
+  .logo {
+    justify-self: start;
+    display: inline-flex;
+    align-items: center;
+    flex-shrink: 0;
+    line-height: 0;
+  }
+  .logo img {
+    height: 52px;
+    width: auto;
+    display: block;
+  }
+  .nav-links {
+    justify-self: center;
+    display: flex; gap: 40px; align-items: center;
+    font-size: 15px; color: var(--ink-soft); white-space: nowrap;
+  }
+  .nav-links a:hover { color: var(--ink); }
+  .nav-links a.active { color: var(--ink); font-weight: 500; }
+  .nav-actions {
+    justify-self: end;
+    display: flex; align-items: center; gap: 10px; flex-shrink: 0;
+  }
+  .btn {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: var(--ink); color: var(--bg);
+    padding: 12px 22px; border-radius: 999px;
+    font-weight: 500; font-size: 15px;
+    transition: transform .15s ease, background .15s ease, opacity .15s ease;
+    border: 0; cursor: pointer;
+    font-family: inherit;
+  }
+  .btn:hover { background: var(--accent); transform: translateY(-1px); }
+  .btn.lg { padding: 18px 32px; font-size: 17px; }
+  .btn.accent { background: var(--accent); }
+  .btn.accent:hover { background: var(--accent-d); }
+  .btn:disabled {
+    background: var(--line); color: var(--ink-soft);
+    cursor: not-allowed; transform: none;
+  }
+  .btn .arrow { transition: transform .15s ease; }
+  .btn:hover:not(:disabled) .arrow { transform: translateX(3px); }
+  .btn.share {
+    background: var(--accent);
+    color: var(--bg);
+    font-weight: 500;
+    border: 0; cursor: pointer; font-family: inherit;
+  }
+  .btn.share:hover {
+    background: var(--accent-d);
+    transform: translateY(-1px);
+  }
+  .btn.share svg { width: 16px; height: 16px; }
+  .ghost-btn {
+    display: inline-flex; align-items: center; gap: 6px;
+    padding: 10px 18px; border-radius: 999px;
+    border: 1px solid var(--line); background: transparent;
+    font-family: inherit; font-size: 14px; color: var(--ink-soft);
+    cursor: pointer; transition: all .15s ease;
+  }
+  .ghost-btn:hover { color: var(--ink); border-color: var(--ink); }
+
+  /* ───── Quiz shell ───── */
+  main {
+    flex: 1;
+    padding: 60px 0 80px;
+  }
+  .quiz-head {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .eyebrow {
+    display: inline-block;
+    font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase;
+    color: var(--accent-d); font-weight: 700; margin-bottom: 14px;
+  }
+  .quiz-head h1 {
+    font-family: 'Inter', sans-serif; font-weight: 800;
+    font-size: clamp(40px, 5.4vw, 64px);
+    line-height: 1.0; letter-spacing: -0.035em;
+    margin-bottom: 18px;
+  }
+  .quiz-head h1 .ital {
+    font-family: 'Instrument Serif', serif;
+    font-style: italic; font-weight: 400;
+    color: var(--accent); letter-spacing: -0.02em;
+  }
+  .quiz-head p {
+    font-size: 17px; color: var(--ink-soft); max-width: 460px; margin: 0 auto;
+  }
+
+  /* ───── Progress meter ───── */
+  .progress {
+    max-width: 720px; margin: 0 auto 50px;
+    padding: 0 28px;
+  }
+  .progress-bar {
+    height: 6px; background: var(--line); border-radius: 3px; overflow: hidden;
+    position: relative;
+  }
+  .progress-bar .fill {
+    position: absolute; left: 0; top: 0; bottom: 0;
+    background: var(--accent);
+    width: 0%;
+    border-radius: 3px;
+    transition: width .5s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .progress-meta {
+    display: flex; justify-content: space-between; align-items: center;
+    margin-top: 12px; font-size: 13px; color: var(--ink-soft);
+  }
+  .progress-meta .num { font-weight: 600; color: var(--ink); }
+
+  /* ───── Question card ───── */
+  .step {
+    display: none;
+    max-width: 720px; margin: 0 auto;
+    padding: 0 28px;
+    animation: stepIn .45s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+  .step.active { display: block; }
+  @keyframes stepIn {
+    from { opacity: 0; transform: translateY(12px); }
+    to   { opacity: 1; transform: none; }
+  }
+
+  .q-eyebrow {
+    display: inline-flex; align-items: center; gap: 10px;
+    font-size: 12px; font-weight: 700; letter-spacing: 0.16em;
+    color: var(--accent-d); text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  .q-eyebrow .num {
+    width: 26px; height: 26px; border-radius: 50%;
+    background: var(--accent); color: white;
+    display: inline-grid; place-items: center;
+    font-size: 12px; letter-spacing: 0;
+  }
+  .q-title {
+    font-family: 'Inter', sans-serif; font-weight: 800;
+    font-size: clamp(32px, 4.2vw, 48px);
+    line-height: 1.05; letter-spacing: -0.025em;
+    margin-bottom: 14px;
+  }
+  .q-title .ital {
+    font-family: 'Instrument Serif', serif;
+    font-style: italic; font-weight: 400;
+    color: var(--accent); letter-spacing: -0.02em;
+  }
+  .q-title .quote {
+    font-family: 'Instrument Serif', serif;
+    font-style: italic; font-weight: 400;
+    color: var(--ink-soft);
+  }
+  .q-help {
+    font-size: 16px; color: var(--ink-soft); margin-bottom: 32px;
+  }
+
+  /* ───── Answer cards ───── */
+  .options { display: flex; flex-direction: column; gap: 10px; margin-bottom: 36px; }
+  .opt {
+    display: flex; align-items: flex-start; gap: 14px;
+    padding: 18px 22px;
+    background: var(--bg-card); border: 1.5px solid var(--line);
+    border-radius: 16px;
+    cursor: pointer;
+    transition: all .15s ease;
+    position: relative;
+  }
+  .opt:hover { border-color: var(--ink-soft); }
+  .opt input {
+    position: absolute; opacity: 0; pointer-events: none;
+  }
+  .opt .ind {
+    flex: none;
+    width: 24px; height: 24px;
+    border: 1.5px solid var(--line);
+    background: white;
+    display: grid; place-items: center;
+    transition: all .15s ease;
+    margin-top: 1px;
+  }
+  .opt.check .ind { border-radius: 6px; }
+  .opt.radio .ind { border-radius: 50%; }
+  .opt .ind svg { width: 14px; height: 14px; color: white; opacity: 0; transform: scale(0.6); transition: all .15s ease; }
+  .opt .lbl {
+    font-size: 16px; line-height: 1.45; color: var(--ink);
+    font-weight: 500;
+  }
+  .opt input:checked ~ .ind {
+    background: var(--accent); border-color: var(--accent);
+  }
+  .opt input:checked ~ .ind svg { opacity: 1; transform: none; }
+  .opt:has(input:checked) {
+    background: var(--accent-soft);
+    border-color: var(--accent);
+  }
+
+  /* ───── Hours slider (Q5) ───── */
+  .hours-input {
+    background: var(--bg-card); border: 1.5px solid var(--line);
+    border-radius: 16px; padding: 30px 28px 22px;
+    margin-bottom: 36px;
+  }
+  .hours-readout {
+    text-align: center; margin-bottom: 24px;
+    font-family: 'Instrument Serif', serif; font-style: italic;
+    font-size: 58px; line-height: 1; color: var(--accent-d);
+    letter-spacing: -0.02em;
+  }
+  .hours-readout .unit {
+    font-size: 0.38em; color: var(--ink-soft); margin-left: 8px;
+  }
+  #hoursRange {
+    -webkit-appearance: none; appearance: none;
+    width: 100%; height: 6px; border-radius: 3px;
+    background: linear-gradient(to right, var(--accent) var(--fill, 39%), var(--line) var(--fill, 39%));
+    cursor: pointer;
+  }
+  #hoursRange::-webkit-slider-thumb {
+    -webkit-appearance: none; appearance: none;
+    width: 30px; height: 30px; border-radius: 50%;
+    background: var(--accent); border: 4px solid white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.25);
+    cursor: grab;
+  }
+  #hoursRange::-moz-range-thumb {
+    width: 30px; height: 30px; border-radius: 50%;
+    background: var(--accent); border: 4px solid white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.25);
+    cursor: grab;
+  }
+  #hoursRange:focus-visible { outline: 2px solid var(--accent-d); outline-offset: 8px; }
+  .hours-scale {
+    display: flex; justify-content: space-between;
+    margin-top: 10px; font-size: 12px; color: var(--ink-soft);
+  }
+  .hours-week {
+    text-align: center; margin-top: 20px;
+    font-size: 14px; color: var(--ink-soft);
+  }
+
+  /* nav controls */
+  .step-nav {
+    display: flex; justify-content: space-between; align-items: center;
+    gap: 12px;
+    border-top: 1px solid var(--line);
+    padding-top: 24px;
+  }
+
+  /* ───── Loading step ───── */
+  .loader {
+    max-width: 480px; margin: 60px auto;
+    text-align: center;
+    padding: 0 28px;
+  }
+  .loader-brain {
+    width: 88px; height: 88px;
+    margin: 0 auto 28px;
+    position: relative;
+  }
+  .loader-brain .pulse {
+    position: absolute; inset: 0;
+    border-radius: 50%; background: var(--accent);
+    opacity: 0.25;
+    animation: pulse 1.6s ease-out infinite;
+  }
+  .loader-brain .pulse.d { animation-delay: 0.8s; }
+  .loader-brain .core {
+    position: absolute; inset: 18px;
+    border-radius: 50%; background: var(--accent);
+    display: grid; place-items: center; color: white;
+    font-size: 28px;
+  }
+  @keyframes pulse {
+    0%   { transform: scale(0.7); opacity: 0.5; }
+    100% { transform: scale(1.5); opacity: 0; }
+  }
+  .loader h2 {
+    font-family: 'Inter', sans-serif; font-weight: 700;
+    font-size: 28px; letter-spacing: -0.02em; margin-bottom: 12px;
+  }
+  .loader p {
+    color: var(--ink-soft); font-size: 16px;
+  }
+  .loader .dots { color: var(--accent); }
+  .loader .dots span {
+    display: inline-block; animation: dot 1.4s infinite;
+  }
+  .loader .dots span:nth-child(2) { animation-delay: 0.2s; }
+  .loader .dots span:nth-child(3) { animation-delay: 0.4s; }
+  @keyframes dot { 0%,80%,100%{opacity:0.2;} 40%{opacity:1;} }
+
+  /* ───── Result ───── */
+  .result {
+    max-width: 760px; margin: 0 auto;
+    padding: 0 28px;
+  }
+  .result-eyebrow {
+    text-align: center; margin-bottom: 16px;
+  }
+  .result h2 {
+    text-align: center;
+    font-family: 'Inter', sans-serif; font-weight: 800;
+    font-size: clamp(38px, 5.2vw, 60px);
+    line-height: 1.0; letter-spacing: -0.03em;
+    margin-bottom: 16px;
+  }
+  .result h2 .ital {
+    font-family: 'Instrument Serif', serif;
+    font-style: italic; font-weight: 400;
+    color: var(--accent); letter-spacing: -0.02em;
+  }
+  .result-lede {
+    text-align: center;
+    font-size: 18px; color: var(--ink-soft);
+    max-width: 580px; margin: 0 auto 40px;
+  }
+
+  /* "What your answers show" card */
+  .read-card {
+    background: var(--bg-card); border: 1px solid var(--line);
+    border-radius: 20px; padding: 26px 28px;
+    margin-bottom: 16px;
+  }
+  .read-card .lbl {
+    font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--accent-d); font-weight: 700; margin-bottom: 14px;
+  }
+  .read-list { list-style: none; margin: 0; padding: 0; }
+  .read-list li {
+    display: flex; gap: 12px; align-items: flex-start;
+    padding: 11px 0; font-size: 16px; line-height: 1.5; color: var(--ink);
+    border-top: 1px solid var(--line);
+  }
+  .read-list li:first-child { border-top: 0; padding-top: 0; }
+  .read-list li:last-child { padding-bottom: 0; }
+  .read-list li::before {
+    content: '✓';
+    flex: none; width: 22px; height: 22px; border-radius: 50%;
+    background: var(--accent); color: white;
+    display: grid; place-items: center;
+    font-size: 12px; font-weight: 700;
+    margin-top: 2px;
+  }
+
+  /* "Why a walk works" card */
+  .why-card {
+    background: var(--ink); color: var(--bg-card);
+    border-radius: 20px; padding: 26px 28px;
+    margin-bottom: 28px;
+    position: relative; overflow: hidden;
+  }
+  .why-card::before {
+    content: ''; position: absolute; right: 0; top: 0;
+    width: 220px; height: 220px; border-radius: 50%;
+    background: var(--accent); opacity: 0.16; filter: blur(20px);
+    transform: translate(80px, -80px);
+    pointer-events: none;
+  }
+  .why-card .lbl {
+    font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--accent); font-weight: 700; margin-bottom: 4px;
+    position: relative;
+  }
+  .why-row {
+    display: flex; align-items: center; gap: 20px;
+    padding: 16px 0;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    position: relative;
+  }
+  .why-card .lbl + .why-row { border-top: 0; }
+  .why-num {
+    flex: none; width: 92px;
+    font-family: 'Inter', sans-serif; font-weight: 800;
+    font-size: 34px; letter-spacing: -0.03em; line-height: 1;
+  }
+  .why-num span {
+    font-family: 'Instrument Serif', serif; font-style: italic; font-weight: 400;
+    font-size: 0.55em; color: var(--accent); margin-left: 2px;
+  }
+  .why-txt { font-size: 14.5px; opacity: 0.85; line-height: 1.45; }
+  .why-src {
+    margin-top: 14px; font-size: 11.5px; opacity: 0.55;
+    position: relative; line-height: 1.5;
+  }
+  .why-src a { text-decoration: underline; text-underline-offset: 2px; }
+
+  /* "Your hours" hero card */
+  .hours-card {
+    background: var(--ink); color: var(--bg-card);
+    border-radius: 20px; padding: 26px 28px;
+    margin-bottom: 16px;
+    position: relative; overflow: hidden;
+  }
+  .hours-card::before {
+    content: ''; position: absolute; right: 0; top: 0;
+    width: 220px; height: 220px; border-radius: 50%;
+    background: var(--accent); opacity: 0.16; filter: blur(20px);
+    transform: translate(80px, -80px);
+    pointer-events: none;
+  }
+  .hours-card .lbl {
+    font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--accent); font-weight: 700; margin-bottom: 10px;
+    position: relative;
+  }
+  .hours-big {
+    font-family: 'Inter', sans-serif; font-weight: 800;
+    font-size: 42px; line-height: 1; letter-spacing: -0.03em;
+    position: relative;
+  }
+  .hours-big .unit {
+    font-family: 'Instrument Serif', serif; font-style: italic; font-weight: 400;
+    font-size: 0.52em; color: var(--accent);
+  }
+  .hours-sub { margin-top: 8px; font-size: 14.5px; opacity: 0.85; position: relative; }
+  .hours-year {
+    margin-top: 14px; padding-top: 12px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    font-size: 12px; opacity: 0.6; position: relative;
+  }
+
+  /* "What you get back" scenes */
+  .gets-card {
+    background: var(--bg-card); border: 1px solid var(--line);
+    border-radius: 20px; padding: 26px 28px;
+    margin-bottom: 16px;
+  }
+  .gets-card .lbl {
+    font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--accent-d); font-weight: 700; margin-bottom: 12px;
+  }
+  .scene {
+    display: flex; align-items: center; gap: 14px;
+    padding: 12px 0;
+    border-top: 1px solid var(--line);
+    font-size: 15.5px; color: var(--ink); line-height: 1.45;
+  }
+  .scenes .scene:first-child { border-top: 0; padding-top: 0; }
+  .scenes .scene:last-child { padding-bottom: 0; }
+  .scene .ic {
+    flex: none; width: 36px; height: 36px; border-radius: 11px;
+    background: var(--bg-warm); border: 1px solid var(--line);
+    display: grid; place-items: center; color: var(--ink-soft);
+  }
+  .scene.hit .ic { background: var(--accent); border-color: var(--accent); color: white; }
+  .scene .tag {
+    margin-left: auto; flex: none;
+    font-family: 'Instrument Serif', serif; font-style: italic;
+    font-size: 13px; color: var(--accent-d);
+    padding-left: 10px;
+  }
+
+  /* Guarantee under CTA */
+  .result-cta .guarantee {
+    margin-top: 10px; font-size: 13px; color: var(--ink-soft);
+  }
+
+  /* CTA */
+  .result-cta {
+    text-align: center;
+    margin: 36px 0 20px;
+  }
+  .result-cta .price-note {
+    font-size: 14px; color: var(--ink-soft); margin-top: 12px;
+  }
+  .result-cta .price-note s { opacity: 0.6; margin-right: 6px; }
+  .retake {
+    text-align: center; margin-top: 24px;
+  }
+  .retake a {
+    display: inline-block;
+    color: var(--ink-soft); font-size: 13px;
+    padding: 11px 8px;
+  }
+  .retake a span {
+    border-bottom: 1px dashed var(--ink-soft);
+    padding-bottom: 1px;
+  }
+  .retake a:hover { color: var(--accent); }
+  .retake a:hover span { border-color: var(--accent); }
+
+  /* Footnote linking to science */
+  .footnote-link {
+    text-align: center;
+    margin-top: 32px;
+    font-size: 13px; color: var(--ink-soft);
+  }
+  .footnote-link a {
+    color: var(--accent-d);
+    border-bottom: 1px solid transparent;
+    transition: border-color .15s ease;
+  }
+  .footnote-link a:hover { border-color: var(--accent-d); }
+
+  /* ───── Footer ───── */
+  footer { padding: 50px 0 40px; border-top: 1px solid var(--line); margin-top: 60px; background: var(--bg); }
+  .foot-grid {
+    display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr; gap: 32px;
+  }
+  .foot-grid h5 { font-size: 13px; text-transform: uppercase; letter-spacing: 0.12em; color: var(--ink-soft); margin-bottom: 16px; font-weight: 600; }
+  .foot-grid a { display: block; padding: 6px 0; font-size: 15px; color: var(--ink); }
+  .foot-grid a:hover { color: var(--accent); }
+  .foot-grid .logo { display: flex; }
+  .foot-bottom {
+    margin-top: 40px; padding-top: 24px; border-top: 1px solid var(--line);
+    display: flex; justify-content: space-between; align-items: center;
+    font-size: 13px; color: var(--ink-soft); flex-wrap: wrap; gap: 12px;
+  }
+  .store-badges { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 16px; }
+  .app-badge { display: inline-block; }
+  .app-badge img { width: 132px; height: 42px; display: block; }
+  .muted { color: var(--ink-soft); }
+
+  /* ───── Mobile ───── */
+  @media (max-width: 880px) {
+    body { font-size: 16px; }
+    .container, .narrow { padding: 0 20px; }
+    .nav-links { display: none; }
+    .nav-inner {
+      display: flex; justify-content: space-between;
+      padding: 12px 18px;
+    }
+    .logo img { height: 40px; }
+    .btn { padding: 12px 18px; font-size: 13px; }
+    .btn.lg { padding: 16px 26px; font-size: 15px; }
+    .ghost-btn { padding: 11px 18px; font-size: 13px; }
+
+    main { padding: 20px 0 40px; }
+
+    /* Compact hero on mobile - keep the badge + headline, drop the verbose subhead size */
+    .quiz-head { margin-bottom: 22px; padding: 0 20px; }
+    .quiz-head .eyebrow { font-size: 11px; margin-bottom: 10px; }
+    .quiz-head h1 { font-size: 30px; line-height: 1.0; margin-bottom: 10px; }
+    .quiz-head p { font-size: 14px; max-width: none; }
+
+    .progress { margin-bottom: 28px; padding: 0 20px; }
+    .progress-bar { height: 6px; border-radius: 3px; }
+    .progress-meta { font-size: 12px; margin-top: 10px; }
+
+    .step { padding: 0 20px; }
+    .q-eyebrow { font-size: 11px; gap: 8px; margin-bottom: 14px; }
+    .q-eyebrow .num { width: 22px; height: 22px; font-size: 11px; }
+    .q-title { font-size: 26px; margin-bottom: 10px; }
+    .q-help { font-size: 14px; margin-bottom: 22px; }
+
+    .options { gap: 8px; margin-bottom: 24px; }
+    .opt { padding: 14px 16px; gap: 12px; border-radius: 14px; min-height: 56px; }
+    .opt .ind { width: 24px; height: 24px; }
+    .opt .lbl { font-size: 14.5px; line-height: 1.4; }
+
+    /* Thumb-friendly nav: full-width Next, ghost Back */
+    .step-nav { padding-top: 18px; gap: 10px; }
+    .step-nav .btn.accent.next {
+      flex: 1;
+      padding: 16px 22px; font-size: 15px;
+      justify-content: center;
+    }
+    .step-nav .ghost-btn.back {
+      padding: 14px 18px; font-size: 14px;
+      min-height: 48px;
+    }
+    .step-nav > span { display: none; }
+
+    .loader { padding: 0 20px; margin: 36px auto; }
+    .loader-brain { width: 76px; height: 76px; margin-bottom: 22px; }
+    .loader h2 { font-size: 22px; }
+    .loader p { font-size: 14px; }
+
+    .result { padding: 0 20px; }
+    .result h2 { font-size: 32px; }
+    .result-lede { font-size: 15px; margin-bottom: 28px; }
+
+    .read-card { padding: 20px; border-radius: 16px; margin-bottom: 14px; }
+    .read-list li { font-size: 14.5px; padding: 9px 0; gap: 10px; }
+    .read-list li::before { width: 20px; height: 20px; font-size: 11px; }
+
+    .why-card { padding: 20px; border-radius: 16px; margin-bottom: 22px; }
+    .why-row { padding: 13px 0; gap: 14px; }
+    .why-num { width: 72px; font-size: 27px; }
+    .why-txt { font-size: 13.5px; }
+    .why-src { font-size: 11px; }
+
+    .hours-input { padding: 24px 18px 18px; margin-bottom: 26px; }
+    .hours-readout { font-size: 46px; margin-bottom: 20px; }
+    .hours-week { font-size: 13px; margin-top: 16px; }
+
+    .hours-card { padding: 20px; border-radius: 16px; margin-bottom: 14px; }
+    .hours-big { font-size: 34px; }
+    .hours-sub { font-size: 13.5px; }
+    .hours-year { font-size: 11.5px; }
+
+    .gets-card { padding: 20px; border-radius: 16px; margin-bottom: 14px; }
+    .scene { font-size: 14px; gap: 11px; padding: 10px 0; }
+    .scene .ic { width: 32px; height: 32px; border-radius: 9px; }
+    .scene .tag { font-size: 12px; }
+
+    .result-cta { margin: 28px 0 16px; }
+
+    .foot-grid { grid-template-columns: 1fr 1fr; gap: 28px; }
+    .foot-grid h5 { font-size: 11px; margin-bottom: 12px; }
+    .foot-grid a { padding: 5px 0; font-size: 14px; }
+    footer { padding: 40px 0 30px; }
+    .foot-bottom { font-size: 12px; padding-top: 20px; margin-top: 32px; }
+  }
+
+  @media (max-width: 380px) {
+    .container, .narrow { padding: 0 16px; }
+    .nav-inner { padding: 11px 16px; }
+    .progress, .step, .loader, .result { padding-left: 16px; padding-right: 16px; }
+    .quiz-head h1 { font-size: 32px; }
+    .q-title { font-size: 23px; }
+    .why-num { width: 64px; font-size: 24px; }
+    .foot-grid { grid-template-columns: 1fr; gap: 24px; }
+  }
+  /* ───── Mobile Menu ───── */
+  @media (min-width: 881px) { .menu-toggle { display: none; } }
+  @media (max-width: 880px) { .menu-toggle { display: flex; } }
+  .menu-toggle { background: none; border: none; cursor: pointer; width: 40px; height: 40px; flex-direction: column; justify-content: center; align-items: center; gap: 5px; padding: 8px; flex-shrink: 0; }
+  .menu-toggle span { display: block; width: 20px; height: 2px; background: var(--ink); border-radius: 2px; }
+  .mobile-menu-backdrop { position: fixed; inset: 0; background: rgba(0,0,0,0.3); z-index: 99; opacity: 0; pointer-events: none; transition: opacity .35s ease; }
+  .mobile-menu-backdrop.open { opacity: 1; pointer-events: auto; }
+  .mobile-menu { position: fixed; top: 0; right: 0; bottom: 0; width: min(320px, 82vw); background: var(--bg); z-index: 100; transform: translateX(100%); transition: transform .35s cubic-bezier(.4,0,.2,1); display: flex; flex-direction: column; box-shadow: -10px 0 40px rgba(0,0,0,0.08); }
+  .mobile-menu.open { transform: translateX(0); }
+  .mobile-menu-header { display: flex; justify-content: space-between; align-items: center; padding: 16px 22px; border-bottom: 1px solid var(--line); }
+  .menu-close { background: none; border: none; cursor: pointer; font-size: 28px; color: var(--ink); width: 40px; height: 40px; display: grid; place-items: center; }
+  .mobile-menu-links { padding: 32px 22px; display: flex; flex-direction: column; gap: 4px; flex: 1; }
+  .mobile-menu-links a { font-size: 18px; font-weight: 500; padding: 14px 0; color: var(--ink); border-bottom: 1px solid var(--line); transition: color .15s; }
+  .mobile-menu-links a:last-child { border-bottom: none; }
+  .mobile-menu-links a:hover { color: var(--accent); }
+
+  /* ───── Accessibility ───── */
+  a:focus-visible, button:focus-visible, summary:focus-visible {
+    outline: 2px solid var(--accent-d); outline-offset: 3px; border-radius: 4px;
+  }
+  .btn:focus-visible, .ghost-btn:focus-visible { outline-offset: 4px; border-radius: 999px; }
+  .opt:focus-within { outline: 2px solid var(--accent-d); outline-offset: 3px; }
+  .btn:active:not(:disabled) { transform: scale(0.97); }
+  .opt:active { transform: scale(0.99); }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="logo"><img src="images/B1-nav.png" alt="Tyme Boxed" /></a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="science.html">The Science</a>
+      <a href="quiz.html" class="active">Is Tyme Boxed for me?</a>
+    </div>
+    <div class="nav-actions">
+      <a href="preorder.html" class="btn share">Order now <span class="arrow">→</span></a>
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<div class="mobile-menu-backdrop" id="menuBackdrop"></div>
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-menu-header">
+    <a href="index.html" class="logo"><img src="images/B1-nav.png" alt="Tyme Boxed" /></a>
+    <button class="menu-close" aria-label="Close menu">×</button>
+  </div>
+  <div class="mobile-menu-links">
+    <a href="index.html">Home</a>
+    <a href="science.html">The Science</a>
+    <a href="quiz.html">Is Tyme Boxed for me?</a>
+    <a href="preorder.html">Order now</a>
+    <a href="support.html">Help center</a>
+  </div>
+</div>
+
+<main>
+
+  <!-- ───── HEAD ───── -->
+  <div class="quiz-head" id="quizHead">
+    <div class="eyebrow">Is Tyme Boxed for you?</div>
+    <h1>Find out in <span class="ital">90 seconds.</span></h1>
+    <p>Five questions. No email needed. Honest answer at the end.</p>
+  </div>
+
+  <!-- ───── PROGRESS ───── -->
+  <div class="progress" id="progressWrap">
+    <div class="progress-bar"><div class="fill" id="fill"></div></div>
+    <div class="progress-meta" aria-live="polite">
+      <span><span class="num" id="qNum">0</span> of 5 answered</span>
+      <span id="qHint">Pick what fits</span>
+    </div>
+  </div>
+
+  <!-- ───── Q1 ───── -->
+  <section class="step active" data-step="0" data-multi="true">
+    <div class="q-eyebrow"><span class="num">1</span> The Why</div>
+    <h2 class="q-title">What brings you here <span class="ital">today?</span></h2>
+    <p class="q-help">Select everything that feels true. There are no wrong answers.</p>
+
+    <div class="options">
+      <label class="opt check">
+        <input type="checkbox" name="q1" value="present">
+        <span class="ind"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5"><path d="M5 12l5 5L20 7"/></svg></span>
+        <span class="lbl">I want to be more present. At meals, in conversations, in my own head.</span>
+      </label>
+      <label class="opt check">
+        <input type="checkbox" name="q1" value="focus">
+        <span class="ind"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5"><path d="M5 12l5 5L20 7"/></svg></span>
+        <span class="lbl">I want to focus for more than a few minutes without reaching for my phone.</span>
+      </label>
+      <label class="opt check">
+        <input type="checkbox" name="q1" value="sleep">
+        <span class="ind"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5"><path d="M5 12l5 5L20 7"/></svg></span>
+        <span class="lbl">I want to stop scrolling until midnight and actually sleep.</span>
+      </label>
+      <label class="opt check">
+        <input type="checkbox" name="q1" value="tried">
+        <span class="ind"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5"><path d="M5 12l5 5L20 7"/></svg></span>
+        <span class="lbl">I've tried Screen Time, deleting apps, willpower. None of it stuck.</span>
+      </label>
+      <label class="opt check">
+        <input type="checkbox" name="q1" value="guilt">
+        <span class="ind"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5"><path d="M5 12l5 5L20 7"/></svg></span>
+        <span class="lbl">I just want the low-level guilt about my screen time to stop.</span>
+      </label>
+      <label class="opt check">
+        <input type="checkbox" name="q1" value="none">
+        <span class="ind"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5"><path d="M5 12l5 5L20 7"/></svg></span>
+        <span class="lbl">Honestly? None of these. I'm just curious.</span>
+      </label>
+    </div>
+
+    <div class="step-nav">
+      <span></span>
+      <button class="btn accent next" disabled>Next <span class="arrow">→</span></button>
+    </div>
+  </section>
+
+  <!-- ───── Q2 ───── -->
+  <section class="step" data-step="1" data-multi="true">
+    <div class="q-eyebrow"><span class="num">2</span> The Patterns</div>
+    <h2 class="q-title">Which of these sound <span class="ital">familiar?</span></h2>
+    <p class="q-help">Select all that apply. No one's counting.</p>
+
+    <div class="options">
+      <label class="opt check">
+        <input type="checkbox" name="q2">
+        <span class="ind"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5"><path d="M5 12l5 5L20 7"/></svg></span>
+        <span class="lbl">I set Screen Time limits and tap "Ignore Limit" without thinking.</span>
+      </label>
+      <label class="opt check">
+        <input type="checkbox" name="q2">
+        <span class="ind"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5"><path d="M5 12l5 5L20 7"/></svg></span>
+        <span class="lbl">I deleted Instagram (or similar) and reinstalled it within a week.</span>
+      </label>
+      <label class="opt check">
+        <input type="checkbox" name="q2">
+        <span class="ind"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5"><path d="M5 12l5 5L20 7"/></svg></span>
+        <span class="lbl">I've felt my phone buzz in my pocket when it wasn't actually buzzing.</span>
+      </label>
+      <label class="opt check">
+        <input type="checkbox" name="q2">
+        <span class="ind"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5"><path d="M5 12l5 5L20 7"/></svg></span>
+        <span class="lbl">I've opened an app and immediately forgotten why I opened it.</span>
+      </label>
+      <label class="opt check">
+        <input type="checkbox" name="q2">
+        <span class="ind"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5"><path d="M5 12l5 5L20 7"/></svg></span>
+        <span class="lbl">I've told myself "I need to use my phone less" more than once this month.</span>
+      </label>
+      <label class="opt check">
+        <input type="checkbox" name="q2" value="none">
+        <span class="ind"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5"><path d="M5 12l5 5L20 7"/></svg></span>
+        <span class="lbl">None of these sound like me.</span>
+      </label>
+    </div>
+
+    <div class="step-nav">
+      <button class="ghost-btn back">← Back</button>
+      <button class="btn accent next" disabled>Next <span class="arrow">→</span></button>
+    </div>
+  </section>
+
+  <!-- ───── Q3 ───── -->
+  <section class="step" data-step="2" data-multi="false">
+    <div class="q-eyebrow"><span class="num">3</span> The Pull</div>
+    <h2 class="q-title">You sit down to work, read, or just be quiet. How long before your phone is in your <span class="ital">hand?</span></h2>
+    <p class="q-help">Go with your first instinct.</p>
+
+    <div class="options">
+      <label class="opt radio">
+        <input type="radio" name="q3" value="3">
+        <span class="ind"><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="6"/></svg></span>
+        <span class="lbl">Under 5 minutes. The urge comes before I even start.</span>
+      </label>
+      <label class="opt radio">
+        <input type="radio" name="q3" value="2">
+        <span class="ind"><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="6"/></svg></span>
+        <span class="lbl">5 to 15 minutes. I hold out a little while.</span>
+      </label>
+      <label class="opt radio">
+        <input type="radio" name="q3" value="1">
+        <span class="ind"><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="6"/></svg></span>
+        <span class="lbl">15 to 30 minutes. I can focus for a bit, but it doesn't last.</span>
+      </label>
+      <label class="opt radio">
+        <input type="radio" name="q3" value="0">
+        <span class="ind"><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="6"/></svg></span>
+        <span class="lbl">30+ minutes. I can focus in long stretches.</span>
+      </label>
+    </div>
+
+    <div class="step-nav">
+      <button class="ghost-btn back">← Back</button>
+      <button class="btn accent next" disabled>Next <span class="arrow">→</span></button>
+    </div>
+  </section>
+
+  <!-- ───── Q4 ───── -->
+  <section class="step" data-step="3" data-multi="false">
+    <div class="q-eyebrow"><span class="num">4</span> The Moment</div>
+    <h2 class="q-title">Your Screen Time limit appears. <span class="quote">"You've reached your limit for Instagram."</span> What actually <span class="ital">happens?</span></h2>
+    <p class="q-help">Muscle memory counts.</p>
+
+    <div class="options">
+      <label class="opt radio">
+        <input type="radio" name="q4" value="2">
+        <span class="ind"><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="6"/></svg></span>
+        <span class="lbl">I tap "Ignore Limit" instantly. Pure muscle memory.</span>
+      </label>
+      <label class="opt radio">
+        <input type="radio" name="q4" value="1">
+        <span class="ind"><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="6"/></svg></span>
+        <span class="lbl">I usually ignore it. Sometimes I close the app.</span>
+      </label>
+      <label class="opt radio">
+        <input type="radio" name="q4" value="0">
+        <span class="ind"><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="6"/></svg></span>
+        <span class="lbl">I usually close the app. Limits mostly work for me.</span>
+      </label>
+    </div>
+
+    <div class="step-nav">
+      <button class="ghost-btn back">← Back</button>
+      <button class="btn accent next" disabled>Next <span class="arrow">→</span></button>
+    </div>
+  </section>
+
+  <!-- ───── Q5 ───── -->
+  <section class="step" data-step="4" data-multi="slider">
+    <div class="q-eyebrow"><span class="num">5</span> The Number</div>
+    <h2 class="q-title">How many hours a day does your phone <span class="ital">take?</span></h2>
+    <p class="q-help">Your Screen Time app knows the number. A guess works too.</p>
+
+    <div class="hours-input">
+      <div class="hours-readout"><span id="hoursVal">4.5</span><span class="unit">h a day</span></div>
+      <input type="range" id="hoursRange" min="1" max="10" step="0.5" value="4.5" aria-label="Hours of phone use per day" aria-describedby="hoursVal hoursWeek">
+      <div class="hours-scale"><span>1h</span><span>10h+</span></div>
+      <p class="hours-week" id="hoursWeek">That's about 31 hours a week.</p>
+    </div>
+
+    <div class="step-nav">
+      <button class="ghost-btn back">← Back</button>
+      <button class="btn accent next" disabled>See your result <span class="arrow">→</span></button>
+    </div>
+  </section>
+
+  <!-- ───── LOADING ───── -->
+  <section class="step" data-step="5">
+    <div class="loader">
+      <div class="loader-brain">
+        <div class="pulse"></div>
+        <div class="pulse d"></div>
+        <div class="core">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M9 4a4 4 0 0 0-4 4v3a3 3 0 0 0 0 6 4 4 0 0 0 8 0V8a4 4 0 0 0-4-4zM15 4a4 4 0 0 1 4 4v3a3 3 0 0 1 0 6 4 4 0 0 1-8 0"/>
+          </svg>
+        </div>
+      </div>
+      <h2>Reading your answers<span class="dots"><span>.</span><span>.</span><span>.</span></span></h2>
+      <p>Matching your patterns against what we know about attention.</p>
+    </div>
+  </section>
+
+  <!-- ───── RESULT ───── -->
+  <section class="step" data-step="6">
+    <div class="result">
+      <div class="result-eyebrow"><span class="eyebrow">Your result</span></div>
+      <h2 id="resultHeadline">Tyme Boxed is a <span class="ital">strong fit</span> for you.</h2>
+      <p class="result-lede" id="resultLede">Your answers show a clear pattern: the phone wins before you get to choose. Tyme Boxed was built for exactly this.</p>
+
+      <div class="hours-card">
+        <div class="lbl">Your hours</div>
+        <div class="hours-big" id="hoursBig">~11 <span class="unit">hours a week, yours again</span></div>
+        <div class="hours-sub" id="hoursSub">Your 4.5 hours a day, cut by just a third.</div>
+        <div class="hours-year" id="hoursYear">~550 hours a year · about ₹2 per hour at the launch price</div>
+      </div>
+
+      <div class="read-card">
+        <div class="lbl">What your answers show</div>
+        <ul class="read-list" id="resultReads">
+          <li>The pull comes fast, often within minutes.</li>
+          <li>Software limits don't hold you. One tap and they're gone.</li>
+          <li>This isn't a willpower problem. It's a design problem.</li>
+        </ul>
+      </div>
+
+      <div class="gets-card">
+        <div class="lbl">What you get back</div>
+        <div class="scenes" id="resultScenes">
+          <div class="scene" data-key="sleep">
+            <span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 14A8 8 0 1 1 10 4a6 6 0 0 0 10 10z"/></svg></span>
+            <span class="txt">Nights end at lights-out, not at 1 a.m.</span>
+          </div>
+          <div class="scene" data-key="focus">
+            <span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="1" fill="currentColor"/></svg></span>
+            <span class="txt">Your first unbroken 90-minute block in months.</span>
+          </div>
+          <div class="scene" data-key="present">
+            <span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 8.5c0 4.5-9 11-9 11s-9-6.5-9-11A5.5 5.5 0 0 1 12 5a5.5 5.5 0 0 1 9 3.5z"/></svg></span>
+            <span class="txt">Dinner with empty hands. Fully there.</span>
+          </div>
+          <div class="scene" data-key="guilt">
+            <span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M9 12h.01M15 12h.01M8.5 16a4 4 0 0 0 7 0"/></svg></span>
+            <span class="txt">The background guilt finally goes quiet.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="why-card">
+        <div class="lbl">Why a walk works</div>
+        <div class="why-row">
+          <div class="why-num">47<span>sec</span></div>
+          <div class="why-txt">How long focus lasts on a screen today, on average.</div>
+        </div>
+        <div class="why-row">
+          <div class="why-num">~6<span>sec</span></div>
+          <div class="why-txt">The walk to your Tyme Boxed. Long enough for the urge to pass.</div>
+        </div>
+        <div class="why-row">
+          <div class="why-num">2 to 3<span>×</span></div>
+          <div class="why-txt">Better follow-through when your plan has a physical step.</div>
+        </div>
+        <div class="why-src">Mark, UC Irvine · Hofmann 2012 · Gollwitzer 1999 · <a href="science.html">Read the science →</a></div>
+      </div>
+
+      <div class="result-cta">
+        <a href="preorder.html" id="resultCtaBtn" class="btn lg accent">Get Tyme Boxed <span class="arrow">→</span></a>
+        <div class="price-note" id="resultCtaNote"><s>₹1,999</s> ₹999 · one-time · lifetime updates</div>
+        <div class="guarantee">10-day returns through Amazon. If the walk doesn't change your evenings, send it back.</div>
+      </div>
+
+      <div class="retake">
+        <a href="#" id="retake"><span>↻ Re-take quiz</span></a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ───── FOOTER ───── -->
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <div class="logo"><img src="images/B1-nav.png" alt="Tyme Boxed" /></div>
+        <p class="muted" style="margin-top: 14px; font-size: 14px; max-width: 280px;">A small device for a quieter mind.</p>
+        <div class="store-badges">
+          <a class="app-badge" href="https://apps.apple.com/in/app/tyme-boxed/id6759287522">
+            <img src="images/app.png" alt="Download on the App Store" loading="lazy" decoding="async">
+          </a>
+          <a class="app-badge" href="https://play.google.com/store/apps/details?id=dev.ambitionsoftware.tyme_boxed">
+            <img src="images/google-play.png" alt="Get it on Google Play" loading="lazy" decoding="async">
+          </a>
+          <a class="app-badge" href="https://apps.apple.com/in/app/tyme-boxed/id0000000000">
+            <img src="images/mac-app-store.svg" alt="Download on the Mac App Store" loading="lazy" decoding="async">
+          </a>
+        </div>
+      </div>
+      <div>
+        <h5>Product</h5>
+        <a href="index.html">Home</a>
+        <a href="science.html">The Science</a>
+        <a href="quiz.html">Is Tyme Boxed for me?</a>
+        <a href="preorder.html">Order</a>
+      </div>
+      <div>
+        <h5>Support</h5>
+        <a href="support.html">Help center</a>
+      </div>
+      <div>
+        <h5>Legal</h5>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+      </div>
+      <div>
+        <h5>Follow</h5>
+        <a href="https://www.linkedin.com/company/tyme-boxed/">LinkedIn</a>
+        <a href="https://www.instagram.com/tyme_boxed">Instagram</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Tyme Boxed. All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+
+<button type="button" class="cart-fab" id="cart-fab" aria-label="Open cart">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+    <path d="M6 6h15l-1.5 9h-12z"/>
+    <path d="M6 6L5 3H2"/>
+    <circle cx="9" cy="20" r="1"/>
+    <circle cx="18" cy="20" r="1"/>
+  </svg>
+  <span class="cart-fab-count" id="cart-fab-count">1</span>
+</button>
+
+<script src="cart.js"></script>
+
+
+<script>
+(function () {
+  const steps = Array.from(document.querySelectorAll('.step'));
+  const fill = document.getElementById('fill');
+  const qNum = document.getElementById('qNum');
+  const qHint = document.getElementById('qHint');
+  const progressWrap = document.getElementById('progressWrap');
+  const quizHead = document.getElementById('quizHead');
+
+  let current = 0;          // 0..4 = questions, 5 = loading, 6 = result
+  const answers = [null, null, null, null, null];
+
+  function go(to) {
+    if (to < 0 || to >= steps.length) return;
+    steps[current].classList.remove('active');
+    current = to;
+    steps[current].classList.add('active');
+    updateChrome();
+    smartScroll();
+    // Move screen-reader focus to the new step's heading
+    const heading = steps[current].querySelector('h2');
+    if (heading) {
+      heading.setAttribute('tabindex', '-1');
+      heading.focus({ preventScroll: true });
+    }
+    if (current === 5) {
+      // loading state → after delay, show result
+      setTimeout(() => {
+        computeAndRender();
+        go(6);
+      }, 1800);
+    }
+  }
+
+  function smartScroll() {
+    // Scroll so the active question card sits just below the sticky nav.
+    // For the result screen, scroll to the top of the result so the headline is seen.
+    const navH = document.querySelector('nav').getBoundingClientRect().height;
+    const target = steps[current];
+    if (!target) return;
+    const rect = target.getBoundingClientRect();
+    const top = rect.top + window.scrollY - navH - 16;
+    // Only scroll if the target isn't already near the top of the viewport
+    if (Math.abs(window.scrollY - Math.max(0, top)) > 4) {
+      window.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
+    }
+  }
+
+  function updateChrome() {
+    if (current <= 4) {
+      // question step - count every answered question, not just the ones behind us
+      const answered = answers.filter(a => a != null).length;
+      qNum.textContent = answered;
+      const pct = (answered / 5) * 100;
+      fill.style.width = pct + '%';
+      const step = steps[current];
+      const m = step.dataset.multi;
+      qHint.textContent = m === 'true' ? 'Select all that apply' : (m === 'slider' ? 'Drag to your number' : 'Pick one');
+      progressWrap.style.display = '';
+      quizHead.style.display = '';
+    } else if (current === 5) {
+      // loading: keep progress visible at 100%
+      fill.style.width = '100%';
+      qNum.textContent = '5';
+      progressWrap.style.display = '';
+      quizHead.style.display = 'none';
+    } else {
+      // result
+      progressWrap.style.display = 'none';
+      quizHead.style.display = 'none';
+    }
+  }
+
+  function refreshNextState() {
+    steps.forEach((s, i) => {
+      if (i > 3) return;
+      const isMulti = s.dataset.multi === 'true';
+      const inputs = s.querySelectorAll('input');
+      const checked = Array.from(inputs).filter(x => x.checked);
+      const nextBtn = s.querySelector('.next');
+      nextBtn.disabled = checked.length === 0;
+      if (isMulti) {
+        answers[i] = checked.length ? checked.map(x => x.value || 'on') : null;
+      } else {
+        answers[i] = checked.length ? checked[0].value : null;
+      }
+    });
+    // Slider step gates on interaction
+    const sliderNext = steps[4] && steps[4].querySelector('.next');
+    if (sliderNext) sliderNext.disabled = answers[4] == null;
+    // Update count badge
+    if (current <= 4) {
+      const answered = answers.filter(a => a != null).length;
+      qNum.textContent = answered;
+      fill.style.width = (answered / 5 * 100) + '%';
+    }
+  }
+
+  // Wire up inputs - "None of these" is mutually exclusive with the rest
+  document.querySelectorAll('.opt input').forEach(input => {
+    input.addEventListener('change', () => {
+      if (input.type === 'checkbox' && input.checked) {
+        const group = input.closest('.options');
+        if (input.value === 'none') {
+          group.querySelectorAll('input').forEach(o => { if (o !== input) o.checked = false; });
+        } else {
+          const none = group.querySelector('input[value="none"]');
+          if (none) none.checked = false;
+        }
+      }
+      refreshNextState();
+    });
+  });
+
+  // Hours slider (Q5)
+  const hoursRange = document.getElementById('hoursRange');
+  const hoursVal = document.getElementById('hoursVal');
+  const hoursWeek = document.getElementById('hoursWeek');
+  function fmtHours(v) { return v >= 10 ? '10+' : (v % 1 === 0 ? String(v) : v.toFixed(1)); }
+  function paintSlider() {
+    const v = parseFloat(hoursRange.value);
+    hoursVal.textContent = fmtHours(v);
+    hoursWeek.textContent = "That's about " + Math.round(v * 7) + ' hours a week.';
+    hoursRange.style.setProperty('--fill', ((v - 1) / 9 * 100) + '%');
+  }
+  hoursRange.addEventListener('input', () => {
+    paintSlider();
+    answers[4] = parseFloat(hoursRange.value);
+    refreshNextState();
+  });
+  paintSlider();
+
+  // Wire up next/back
+  document.querySelectorAll('.next').forEach(btn => {
+    btn.addEventListener('click', () => {
+      if (btn.disabled) return;
+      go(current + 1);
+    });
+  });
+  document.querySelectorAll('.back').forEach(btn => {
+    btn.addEventListener('click', () => go(current - 1));
+  });
+
+  document.getElementById('retake').addEventListener('click', (e) => {
+    e.preventDefault();
+    document.querySelectorAll('.opt input').forEach(i => { i.checked = false; });
+    answers.fill(null);
+    hoursRange.value = 4.5;
+    paintSlider();
+    refreshNextState();
+    go(0);
+  });
+
+  // ── Scoring & result ──
+  function computeScore() {
+    let s = 0;
+    // Q1, Q2 are motivational - capped at 2 points each; "none" scores 0
+    [0, 1].forEach(i => {
+      const a = answers[i];
+      if (Array.isArray(a)) s += Math.min(2, a.filter(v => v !== 'none').length);
+    });
+    // Q3 value: 0..3 (3 = pulled in <5min, 0 = focuses 30+min)
+    if (answers[2] != null) s += parseInt(answers[2], 10);
+    // Q4 value: 0..2 (2 = instant ignore, 0 = usually close)
+    if (answers[3] != null) s += parseInt(answers[3], 10);
+    return s; // 0..9 max, behaviour (Q3+Q4) carries the most weight
+  }
+
+  // Result tiers
+  const RESULTS = {
+    strong: {
+      headline: 'Tyme Boxed is a <span class="ital">strong fit</span> for you.',
+      lede: 'Your answers show a clear pattern: the phone wins before you get to choose. Tyme Boxed was built for exactly this.',
+      reads: [
+        'The pull comes fast, often within minutes.',
+        'Software limits don\'t hold you. One tap and they\'re gone.',
+        'This isn\'t a willpower problem. It\'s a design problem.'
+      ],
+      cta: { label: 'Get Tyme Boxed', href: 'preorder.html', note: '<s>₹1,999</s> ₹999 · one-time · lifetime updates' }
+    },
+    moderate: {
+      headline: 'Tyme Boxed could <span class="ital">really help.</span>',
+      lede: 'The pull is real, but you\'re not at rock bottom. A physical barrier turns your good days into normal days.',
+      reads: [
+        'You hold out for a while. Then the phone wins.',
+        'Some limits work for you. Most don\'t stick.',
+        'You don\'t need more discipline. You need better defaults.'
+      ],
+      cta: { label: 'Get Tyme Boxed', href: 'preorder.html', note: '<s>₹1,999</s> ₹999 · one-time · lifetime updates' }
+    },
+    light: {
+      headline: 'You\'re mostly <span class="ital">in control.</span>',
+      lede: 'You\'ve built solid habits around your phone. Tyme Boxed would guard the slips. It\'s not urgent, and we won\'t pretend it is.',
+      reads: [
+        'You focus in long stretches.',
+        'When you set a limit, it mostly holds.',
+        'A physical barrier would protect the odd bad day.'
+      ],
+      cta: { label: 'Read the science first', href: 'science.html', note: 'Still want one? <s>₹1,999</s> ₹999 · one-time · lifetime updates' }
+    }
+  };
+
+  function pickTier(score) {
+    // Max possible = 2 + 2 + 3 + 2 = 9
+    if (score >= 6) return 'strong';
+    if (score >= 3) return 'moderate';
+    return 'light';
+  }
+
+  let currentResult = RESULTS.strong;
+
+  function computeAndRender() {
+    const tier = pickTier(computeScore());
+    currentResult = RESULTS[tier];
+    document.getElementById('resultHeadline').innerHTML = currentResult.headline;
+    document.getElementById('resultLede').textContent = currentResult.lede;
+    document.getElementById('resultReads').innerHTML =
+      currentResult.reads.map(r => '<li>' + r + '</li>').join('');
+
+    // Hours math: their number, cut by a conservative third
+    const hours = answers[4] || 4.5;
+    const weekly = hours * 7 / 3;
+    const weeklyR = Math.max(1, Math.round(weekly));
+    const yearly = Math.round(weekly * 52 / 10) * 10;
+    const perHour = Math.max(1, Math.round(999 / (weekly * 52)));
+    document.getElementById('hoursBig').innerHTML =
+      '~' + weeklyR + ' <span class="unit">hours a week, yours again</span>';
+    document.getElementById('hoursSub').textContent =
+      'Your ' + fmtHours(hours) + ' hours a day, cut by just a third.';
+    document.getElementById('hoursYear').textContent =
+      '~' + yearly.toLocaleString('en-IN') + ' hours a year · about ₹' + perHour + ' per hour at the launch price';
+
+    // Scenes: what they asked for in Q1 rises to the top, tagged
+    const sceneList = document.getElementById('resultScenes');
+    sceneList.querySelectorAll('.tag').forEach(t => t.remove());
+    const picks = Array.isArray(answers[0]) ? answers[0] : [];
+    ['sleep', 'focus', 'present', 'guilt']
+      .map(k => ({ k, hit: picks.includes(k) }))
+      .sort((a, b) => (b.hit ? 1 : 0) - (a.hit ? 1 : 0))
+      .forEach(({ k, hit }) => {
+        const row = sceneList.querySelector('.scene[data-key="' + k + '"]');
+        if (!row) return;
+        row.classList.toggle('hit', hit);
+        if (hit) {
+          const tag = document.createElement('em');
+          tag.className = 'tag';
+          tag.textContent = 'you said this';
+          row.appendChild(tag);
+        }
+        sceneList.appendChild(row);
+      });
+
+    const btn = document.getElementById('resultCtaBtn');
+    btn.href = currentResult.cta.href;
+    btn.innerHTML = currentResult.cta.label + ' <span class="arrow">→</span>';
+    document.getElementById('resultCtaNote').innerHTML = currentResult.cta.note;
+  }
+
+  // Init
+  updateChrome();
+})();
+
+// Mobile menu
+(function(){
+  const toggle = document.querySelector('.menu-toggle');
+  const menu = document.getElementById('mobileMenu');
+  const backdrop = document.getElementById('menuBackdrop');
+  const close = document.querySelector('.menu-close');
+  function open() { menu.classList.add('open'); backdrop.classList.add('open'); document.body.style.overflow = 'hidden'; toggle.setAttribute('aria-expanded', 'true'); }
+  function shut() { menu.classList.remove('open'); backdrop.classList.remove('open'); document.body.style.overflow = ''; toggle.setAttribute('aria-expanded', 'false'); }
+  toggle.addEventListener('click', open);
+  close.addEventListener('click', shut);
+  backdrop.addEventListener('click', shut);
+  menu.querySelectorAll('a').forEach(a => a.addEventListener('click', shut));
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') shut(); });
+})();
+</script>
+</body>
+</html>

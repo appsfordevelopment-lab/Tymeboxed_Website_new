@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "dev.ambitionsoftware.tyme_boxed",
+      "sha256_cert_fingerprints": [
+        "D1:EA:91:95:37:E4:E7:E7:63:8C:DF:D4:33:27:08:23:0D:5E:F4:6A:BE:CA:D3:6A:A3:DE:1F:C1"
+      ]
+    }
+  }
+]
