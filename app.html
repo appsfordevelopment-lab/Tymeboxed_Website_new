@@ -56,8 +56,8 @@
   <script>
     const APP_STORE = "https://apps.apple.com/in/app/tyme-boxed/id6759287522";
     const PLAY_STORE = "https://play.google.com/store/apps/details?id=dev.ambitionsoftware.tyme_boxed";
-    // TODO: replace with the real Mac App Store listing once it is live.
-    const MAC_STORE = "https://apps.apple.com/in/app/tyme-boxed/id0000000000";
+    // Direct .dmg download until the Mac App Store listing is live.
+    const MAC_STORE = "Tyme-Boxed-0.1.0.dmg";
     const ua = navigator.userAgent || navigator.vendor || window.opera;
     const content = document.getElementById("content");
 
@@ -68,7 +68,7 @@
 
     const appStoreBtn = `<a class="btn" href="${APP_STORE}">Download on the App Store →</a>`;
     const playStoreBtn = `<a class="btn" href="${PLAY_STORE}">Get it on Google Play →</a>`;
-    const macStoreBtn = `<a class="btn" href="${MAC_STORE}">Download on the Mac App Store →</a>`;
+    const macStoreBtn = `<a class="btn" href="${MAC_STORE}" download>Download on the Mac App Store →</a>`;
 
     if (isIOS) {
       window.location.replace(APP_STORE);
