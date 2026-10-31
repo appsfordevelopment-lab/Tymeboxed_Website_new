@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="images/B11-small.png" type="image/png">
+<title>Usage Analytics · Tyme Boxed</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #F4EFE6; --bg-card: #FBF8F2; --ink: #141414; --ink-soft: #5C5752;
+    --line: #E0D8C7; --accent: #D6532B; --accent-d: #B8431F; --accent-soft: rgba(214,83,43,0.10);
+    --green: #2F6B3D; --danger: #B3261E;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #141312; --bg-card: #1E1C1A; --ink: #F4EFE6; --ink-soft: #A8A199;
+      --line: #34302B; --accent: #E8693F; --accent-d: #F08A64; --accent-soft: rgba(232,105,63,0.14);
+      --green: #6FBF82; --danger: #F2847C;
+    }
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg); color: var(--ink);
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    font-size: 15px; line-height: 1.5; -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 1100px; margin: 0 auto; padding: 0 20px 64px; }
+  header { display: flex; align-items: center; justify-content: space-between; padding: 20px 0; gap: 12px; }
+  header img { height: 40px; display: block; }
+  h1 { font-size: clamp(26px, 4vw, 34px); font-weight: 800; letter-spacing: -0.02em; }
+  h2 { font-size: 18px; font-weight: 700; margin-bottom: 14px; }
+  .muted { color: var(--ink-soft); }
+  button, input { font: inherit; color: inherit; }
+  .btn {
+    background: var(--ink); color: var(--bg); border: 0; border-radius: 999px;
+    padding: 11px 20px; font-weight: 600; cursor: pointer;
+  }
+  .btn:hover { background: var(--accent); }
+  .btn:disabled { opacity: .5; cursor: default; }
+  .btn.ghost { background: transparent; color: var(--ink); border: 1.5px solid var(--line); }
+  .btn.ghost:hover { border-color: var(--ink); }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  input[type=email], input[type=password], input[type=search] {
+    width: 100%; padding: 12px 14px; border-radius: 12px;
+    border: 1.5px solid var(--line); background: var(--bg-card);
+  }
+  label { display: block; font-weight: 600; margin-bottom: 6px; }
+  .card { background: var(--bg-card); border: 1px solid var(--line); border-radius: 18px; padding: 20px; }
+  .login { max-width: 420px; margin: 8vh auto 0; display: grid; gap: 16px; }
+  .error { color: var(--danger); }
+  .hidden { display: none !important; }
+
+  .toolbar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; margin: 8px 0 20px; }
+  .segmented { display: inline-flex; background: var(--line); border-radius: 999px; padding: 3px; }
+  .segmented button {
+    border: 0; background: transparent; padding: 7px 18px; border-radius: 999px; cursor: pointer; font-weight: 600;
+    color: var(--ink-soft);
+  }
+  .segmented button[aria-pressed=true] { background: var(--bg-card); color: var(--ink); box-shadow: 0 1px 3px rgba(0,0,0,.12); }
+
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; margin-bottom: 16px; }
+  .stat .label { font-size: 13px; color: var(--ink-soft); font-weight: 500; }
+  .stat .value { font-size: 26px; font-weight: 800; letter-spacing: -0.02em; margin-top: 4px; font-variant-numeric: tabular-nums; }
+
+  .chart { display: flex; align-items: flex-end; gap: 4px; height: 180px; padding-top: 8px; }
+  .bar-col { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 6px; height: 100%; min-width: 0; }
+  .bar-track { flex: 1; width: 100%; display: flex; align-items: flex-end; }
+  .bar { width: 100%; max-width: 36px; margin: 0 auto; background: var(--accent); border-radius: 6px 6px 2px 2px; min-height: 2px; }
+  .bar.empty { background: var(--line); }
+  .bar-label { font-size: 11px; color: var(--ink-soft); white-space: nowrap; }
+  .chart.dense .bar-label { visibility: hidden; }
+  .chart.dense .bar-col:nth-child(5n+1) .bar-label { visibility: visible; }
+
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px; }
+  @media (max-width: 760px) { .grid-2 { grid-template-columns: 1fr; } }
+  .rows { display: grid; gap: 10px; }
+  .row { display: flex; justify-content: space-between; gap: 12px; padding-bottom: 10px; border-bottom: 1px solid var(--line); }
+  .row:last-child { border-bottom: 0; padding-bottom: 0; }
+  .row strong { font-variant-numeric: tabular-nums; }
+
+  table { width: 100%; border-collapse: collapse; }
+  th, td { text-align: left; padding: 10px 8px; border-bottom: 1px solid var(--line); white-space: nowrap; }
+  th { font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--ink-soft); font-weight: 600; }
+  td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+  tbody tr { cursor: pointer; }
+  tbody tr:hover td { background: var(--accent-soft); }
+  .table-wrap { overflow-x: auto; }
+  .user-cell { max-width: 260px; overflow: hidden; text-overflow: ellipsis; }
+
+  .state { padding: 28px 0; text-align: center; color: var(--ink-soft); }
+  .events { list-style: none; max-height: 360px; overflow-y: auto; }
+  .events li { display: flex; justify-content: space-between; gap: 12px; padding: 8px 0; border-bottom: 1px solid var(--line); font-size: 14px; }
+  .back { margin-bottom: 12px; }
+  .section { margin-top: 28px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a href="index.html"><img src="images/B1-nav.png" alt="Tyme Boxed home"></a>
+    <button id="logout" class="btn ghost hidden" type="button">Sign out</button>
+  </header>
+
+  <!-- Sign in -->
+  <section id="login" class="login card hidden" aria-labelledby="login-title">
+    <h1 id="login-title" style="font-size:26px">Admin sign in</h1>
+    <form id="login-form">
+      <label for="email">Email</label>
+      <input id="email" type="email" autocomplete="username" required>
+      <label for="password" style="margin-top:12px">Password</label>
+      <input id="password" type="password" autocomplete="current-password" required>
+      <button class="btn" style="margin-top:16px;width:100%" type="submit">Sign in</button>
+    </form>
+    <p id="login-error" class="error" role="alert"></p>
+  </section>
+
+  <!-- Dashboard -->
+  <main id="dashboard" class="hidden">
+    <div class="toolbar">
+      <div>
+        <h1 id="title">Usage Analytics</h1>
+        <p id="range" class="muted"></p>
+      </div>
+      <div class="segmented" role="group" aria-label="Time period">
+        <button type="button" data-period="day" aria-pressed="false">Day</button>
+        <button type="button" data-period="week" aria-pressed="true">Week</button>
+        <button type="button" data-period="month" aria-pressed="false">Month</button>
+      </div>
+    </div>
+
+    <button id="back" class="btn ghost back hidden" type="button">&larr; All users</button>
+    <div id="report-state" class="state" role="status"></div>
+
+    <div id="report" class="hidden">
+      <div class="stats" id="stats"></div>
+      <div class="card" style="margin-bottom:16px">
+        <h2>Daily app usage</h2>
+        <div id="chart" class="chart" role="img"></div>
+      </div>
+      <div class="grid-2">
+        <div class="card">
+          <h2>Usage breakdown</h2>
+          <div class="rows" id="breakdown"></div>
+        </div>
+        <div class="card">
+          <h2>Focus sessions</h2>
+          <div class="rows" id="focus"></div>
+        </div>
+      </div>
+      <div id="activity" class="card hidden">
+        <h2>Activity history</h2>
+        <ul class="events" id="events"></ul>
+      </div>
+    </div>
+
+    <section id="users-section" class="section">
+      <div class="toolbar" style="margin-bottom:12px">
+        <h2 style="margin:0">Users</h2>
+        <div style="flex:1;max-width:340px">
+          <label for="search" class="hidden">Search users</label>
+          <input id="search" type="search" placeholder="Search by email, phone or name" aria-label="Search users">
+        </div>
+      </div>
+      <div class="card">
+        <div id="users-state" class="state" role="status"></div>
+        <div class="table-wrap hidden" id="users-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">User</th>
+                <th scope="col" class="num">App time</th>
+                <th scope="col" class="num">Launches</th>
+                <th scope="col" class="num">Focus sessions</th>
+                <th scope="col" class="num">Focus time</th>
+              </tr>
+            </thead>
+            <tbody id="users"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+</div>
+
+<script src="admin.js"></script>
+</body>
+</html>
